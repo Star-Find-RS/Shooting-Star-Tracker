@@ -7,6 +7,8 @@ return {
     map = Plugin.resources.Regions.map_amber,
     isRegion = true,
     regionId = -1,
+    nearestTeleport = "",
+    nearestLodestone = ""
   },
   {
     id = 17,
@@ -14,7 +16,9 @@ return {
     name = "Amberfell",
     map = Plugin.resources.Regions.map_amber,
     isRegion = false,
-    regionId = 0
+    regionId = 0,
+    nearestTeleport = "Fairy ring (DLP)",
+    nearestLodestone = "Amberfell"
   },
   --#endregion
   --#region Anachronia
@@ -25,6 +29,8 @@ return {
     map = nil,
     isRegion = true,
     regionId = -1,
+    nearestTeleport = "",
+    nearestLodestone = ""
   },
   {
     id = 18,
@@ -32,7 +38,9 @@ return {
     name = "Anachronia Spirit Grove",
     map = nil,
     isRegion = false,
-    regionId = 1
+    regionId = 1,
+    nearestTeleport = "Rex Matriarch Boss Portal",
+    nearestLodestone = "Anachronia"
   },
   {
     id = 19,
@@ -40,7 +48,9 @@ return {
     name = "Anachronia South-west Beach",
     map = nil,
     isRegion = false,
-    regionId = 1
+    regionId = 1,
+    nearestTeleport = "Archaeology Journal",
+    nearestLodestone = "Anachronia"
   },
   {
     id = 20,
@@ -48,7 +58,9 @@ return {
     name = "Anachronia Swamp Mine",
     map = nil,
     isRegion = false,
-    regionId = 1
+    regionId = 1,
+    nearestTeleport = "Slayer Cape (2)",
+    nearestLodestone = "Anachronia"
   },
   --#endregion
   --#region Asgarnia
@@ -59,6 +71,8 @@ return {
     map = nil,
     isRegion = true,
     regionId = -1,
+    nearestTeleport = "",
+    nearestLodestone = ""
   },
   {
     id = 21   ,
@@ -66,7 +80,9 @@ return {
     name = "Crafting Guild",
     map = nil,
     isRegion = false,
-    regionId = 2
+    regionId = 2,
+    nearestTeleport = "Skills Necklace (3)",
+    nearestLodestone = "Port Sarim"
   },
   {
     id = 22,
@@ -74,7 +90,9 @@ return {
     name = "Artisans' Workshop",
     map = nil,
     isRegion = false,
-    regionId = 2
+    regionId = 2,
+    nearestTeleport = "Modified Blacksmith's Helmet",
+    nearestLodestone = "Falador"
   },
   {
     id = 23,
@@ -82,7 +100,9 @@ return {
     name = "Ewean's Grove",
     map = nil,
     isRegion = false,
-    regionId = 2
+    regionId = 2,
+    nearestTeleport = "Combat Bracelet (1)",
+    nearestLodestone = "Burthorpe"
   },
   {
     id = 24 ,
@@ -90,7 +110,9 @@ return {
     name = "Rimmington Mine",
     map = nil,
     isRegion = false,
-    regionId = 2
+    regionId = 2,
+    nearestTeleport = "Teleport to House",
+    nearestLodestone = "Port Sarim"
   },
   {
     id = 25,
@@ -98,7 +120,9 @@ return {
     name = "Falador West Mine",
     map = nil,
     isRegion = false,
-    regionId = 2
+    regionId = 2,
+    nearestTeleport = "Skills Necklace (3)",
+    nearestLodestone = "Falador"
   },
   {
     id = 26,
@@ -106,7 +130,9 @@ return {
     name = "Lake Crystalmere",
     map = nil,
     isRegion = false,
-    regionId = 2
+    regionId = 2,
+    nearestTeleport = "Balloon Network (Taverley)",
+    nearestLodestone = "Taverley"
   },
   --#endregion
   --#region Ashdale
@@ -117,6 +143,8 @@ return {
     map = nil,
     isRegion = true,
     regionId = -1,
+    nearestTeleport = "",
+    nearestLodestone = ""
   },
   {
     id = 27,
@@ -124,7 +152,9 @@ return {
     name = "Central Ashdale",
     map = nil,
     isRegion = false,
-    regionId = 3
+    regionId = 3,
+    nearestTeleport = "Ashdale Lodestone",
+    nearestLodestone = "Ashdale"
   },
   {
     id = 28,
@@ -132,7 +162,9 @@ return {
     name = "North-west Ashdale",
     map = nil,
     isRegion = false,
-    regionId = 3
+    regionId = 3,
+    nearestTeleport = "Ashdale Lodestone",
+    nearestLodestone = "Ashdale"
   },
   --#endregion
   --#region Crandor or Karamja
@@ -143,6 +175,8 @@ return {
     map = nil,
     isRegion = true,
     regionId = -1,
+    nearestTeleport = "",
+    nearestLodestone = ""
   },
   {
     id = 29,
@@ -150,15 +184,19 @@ return {
     name = "Crandor South-west Beach",
     map = nil,
     isRegion = false,
-    regionId = 4
+    regionId = 4,
+    nearestTeleport = "Dungeoneering Cape (4)",
+    nearestLodestone = "Karamja"
   },
   {
     id = 30,
-    abbreviation = {"hs", "horseshoe", "horseshoe mine", "karamja gold mine", "karamja goldmine", "karamja nw", "nw karamja"},
+    abbreviation = {"hs", "horseshoe", "horseshoe mine", "karamja gold mine", "karamja goldmine", "karamja nw", "nw karamja", "brim scorps", "brimhaven scorps", "north brimhaven", "brim north"},
     name = "Karamja North-west Mine",
     map = nil,
     isRegion = false,
-    regionId = 4
+    regionId = 4,
+    nearestTeleport = "Karamja Lodestone",
+    nearestLodestone = "Karamja"
   },
   {
     id = 31,
@@ -166,7 +204,9 @@ return {
     name = "Brimhaven Dungeon",
     map = nil,
     isRegion = false,
-    regionId = 4
+    regionId = 4,
+    nearestTeleport = "Karamja Lodestone",
+    nearestLodestone = "Karamja"
   },
   {
     id = 32,
@@ -174,7 +214,9 @@ return {
     name = "Tai Bwo Wannai Mine",
     map = nil,
     isRegion = false,
-    regionId = 4
+    regionId = 4,
+    nearestTeleport = "Fairy Ring (CKR)",
+    nearestLodestone = "Karamja"
   },
   {
     id = 33,
@@ -182,7 +224,9 @@ return {
     name = "Shilo Village Mine",
     map = nil,
     isRegion = false,
-    regionId = 4
+    regionId = 4,
+    nearestTeleport = "Karamja Gloves 3",
+    nearestLodestone = "Karamja"
   },
   --#endregion
   --#region Daemonheim
@@ -193,6 +237,8 @@ return {
     map = nil,
     isRegion = true,
     regionId = -1,
+    nearestTeleport = "",
+    nearestLodestone = ""
   },
   {
     id = 34,
@@ -200,7 +246,9 @@ return {
     name = "Zephyrium Mine",
     map = nil,
     isRegion = false,
-    regionId = 5
+    regionId = 5,
+    nearestTeleport = "Dungeoneering Cape (0-9)",
+    nearestLodestone = "Taverley"
   },
   {
     id = 35,
@@ -208,7 +256,9 @@ return {
     name = "Daemonheim South-east",
     map = nil,
     isRegion = false,
-    regionId = 5
+    regionId = 5,
+    nearestTeleport = "Dungeoneering Cape (5)",
+    nearestLodestone = "Taverley"
   },
   --#endregion
   --#region Feldip Hills
@@ -219,6 +269,8 @@ return {
     map = nil,
     isRegion = true,
     regionId = -1,
+    nearestTeleport = "",
+    nearestLodestone = ""
   },
   {
     id = 34,
@@ -226,7 +278,9 @@ return {
     name = "Western Feldip Hills",
     map = nil,
     isRegion = false,
-    regionId = 6
+    regionId = 6,
+    nearestTeleport = "Fairy Ring (AKS)",
+    nearestLodestone = "Oo'glog"
   },
   --#endregion  
   --#region Fremennik Province
@@ -237,6 +291,8 @@ return {
     map = nil,
     isRegion = true,
     regionId = -1,
+    nearestTeleport = "",
+    nearestLodestone = ""
   },
   {
     id = 35,
@@ -244,7 +300,9 @@ return {
     name = "Keldagrim Entrance Mine",
     map = nil,
     isRegion = false,
-    regionId = 7
+    regionId = 7,
+    nearestTeleport = "Fairy Ring (DKS)",
+    nearestLodestone = "Fremennik Province"
   },
   {
     id = 36,
@@ -252,7 +310,9 @@ return {
     name = "Rellekka Mine",
     map = nil,
     isRegion = false,
-    regionId = 7
+    regionId = 7,
+    nearestTeleport = "Enchanted Lyre (1)",
+    nearestLodestone = "Fremennik Province"
   },
   {
     id = 37,
@@ -260,7 +320,9 @@ return {
     name = "Lunar Isle Mine",
     map = nil,
     isRegion = false,
-    regionId = 7
+    regionId = 7,
+    nearestTeleport = "Moonclan Teleport",
+    nearestLodestone = "Lunar Isle"
   },
   {
     id = 38,
@@ -268,7 +330,9 @@ return {
     name = "Jatizso Dungeon Mine",
     map = nil,
     isRegion = false,
-    regionId = 7
+    regionId = 7,
+    nearestTeleport = "Enchanted Lyre (4)",
+    nearestLodestone = "Fremennik Province"
   },
   {
     id = 39,
@@ -276,15 +340,19 @@ return {
     name = "Fremennik Isles Mine",
     map = nil,
     isRegion = false,
-    regionId = 7
+    regionId = 7,
+    nearestTeleport = "Enchanted Lyre (3)",
+    nearestLodestone = "Fremennik Province"
   },
   {
     id = 40,
-    abbreviation = {"misc", "cip", "miscellania coal mine", "coal mine"},
+    abbreviation = {"misc", "cip", "misc coal mine", "miscellania coal mine", "coal mine"},
     name = "Miscellania Mine",
     map = nil,
     isRegion = false,
-    regionId = 7
+    regionId = 7,
+    nearestTeleport = "Fairy Ring (CIP)",
+    nearestLodestone = "Fremennik Province"
   },
   --#endregion  
   --#region Kandarin
@@ -295,6 +363,8 @@ return {
     map = nil,
     isRegion = true,
     regionId = -1,
+    nearestTeleport = "",
+    nearestLodestone = ""
   },
   {
     id = 41,
@@ -302,15 +372,19 @@ return {
     name = "Legends' Guild South-west Mine",
     map = nil,
     isRegion = false,
-    regionId = 8
+    regionId = 8,
+    nearestTeleport = "Cape of Legends",
+    nearestLodestone = "Ardougne"
   },
   {
     id = 42,
-    abbreviation = {"mon", "monastery", "kandarin monastery", "kand monastery"},
+    abbreviation = {"mon", "monastery", "kandarin monastery", "kand monastery", "zoo", "ardy zoo", "ardougne zoo"},
     name = "Ardougne South-east Mine",
     map = nil,
     isRegion = false,
-    regionId = 8
+    regionId = 8,
+    nearestTeleport = "Kandarin Monastery Teleport",
+    nearestLodestone = "Ardougne"
   },
   {
     id = 43,
@@ -318,7 +392,9 @@ return {
     name = "Coal Truck Mine",
     map = nil,
     isRegion = false,
-    regionId = 8
+    regionId = 8,
+    nearestTeleport = "Luck of the Dwarves (4)",
+    nearestLodestone = "Seers' Village"
   },
   {
     id = 44,
@@ -326,7 +402,9 @@ return {
     name = "Yanille",
     map = nil,
     isRegion = false,
-    regionId = 8
+    regionId = 8,
+    nearestTeleport = "Watchtower Teleport",
+    nearestLodestone = "Yanille"
   },
   {
     id = 45,
@@ -334,7 +412,9 @@ return {
     name = "Fight Arena South-east Mine",
     map = nil,
     isRegion = false,
-    regionId = 8
+    regionId = 8,
+    nearestTeleport = "Khazard Teleport",
+    nearestLodestone = "Yanille"
   },
   {
     id = 46,
@@ -342,7 +422,9 @@ return {
     name = "Catherby",
     map = nil,
     isRegion = false,
-    regionId = 8
+    regionId = 8,
+    nearestTeleport = "Catherby Lodestone",
+    nearestLodestone = "Catherby"
   },
   --#endregion  
   --#region Kharidian Desert
@@ -353,6 +435,8 @@ return {
     map = nil,
     isRegion = true,
     regionId = -1,
+    nearestTeleport = "",
+    nearestLodestone = ""
   },
   {
     id = 47,
@@ -360,7 +444,9 @@ return {
     name = "Al Kharid",
     map = nil,
     isRegion = false,
-    regionId = 9
+    regionId = 9,
+    nearestTeleport = "Al Kharid Lodestone",
+    nearestLodestone = "Al Kharid"
   },
   {
     id = 48,
@@ -368,7 +454,9 @@ return {
     name = "Al Kharid Mine",
     map = nil,
     isRegion = false,
-    regionId = 9
+    regionId = 9,
+    nearestTeleport = "Dungeoneering Cape (0-5)",
+    nearestLodestone = "Al Kharid"
   },
   {
     id = 49,
@@ -376,7 +464,9 @@ return {
     name = "Het's Oasis",
     map = nil,
     isRegion = false,
-    regionId = 9
+    regionId = 9,
+    nearestTeleport = "Mystical Sand Seed",
+    nearestLodestone = "Al Kharid"
   },
   {
     id = 50,
@@ -384,7 +474,9 @@ return {
     name = "Uzer Mine",
     map = nil,
     isRegion = false,
-    regionId = 9
+    regionId = 9,
+    nearestTeleport = "Desert Amulet (2)",
+    nearestLodestone = "Bandit Camp"
   },
   {
     id = 51,
@@ -392,7 +484,9 @@ return {
     name = "Agility Pyramid North-west Mine",
     map = nil,
     isRegion = false,
-    regionId = 9
+    regionId = 9,
+    nearestTeleport = "Desert Amulet (1)",
+    nearestLodestone = "Bandit Camp"
   },
   {
     id = 52,
@@ -400,7 +494,9 @@ return {
     name = "Nardah",
     map = nil,
     isRegion = false,
-    regionId = 9
+    regionId = 9,
+    nearestTeleport = "Desert Amulet (1)",
+    nearestLodestone = "Bandit Camp"
   },
   {
     id = 53,
@@ -408,7 +504,9 @@ return {
     name = "Desert Quarry",
     map = nil,
     isRegion = false,
-    regionId = 9
+    regionId = 9,
+    nearestTeleport = "Camulet",
+    nearestLodestone = "Bandit Camp"
   },
   --#endregion  
   --#region Lost Grove
@@ -419,6 +517,8 @@ return {
     map = nil,
     isRegion = true,
     regionId = -1,
+    nearestTeleport = "",
+    nearestLodestone = ""
   },
   {
     id = 54,
@@ -426,7 +526,9 @@ return {
     name = "North Lost Grove",
     map = nil,
     isRegion = false,
-    regionId = 10
+    regionId = 10,
+    nearestTeleport = "Northern Lost Grove Teleport",
+    nearestLodestone = "Yanille"
   },
   {
     id = 55,
@@ -434,7 +536,9 @@ return {
     name = "South-west Lost Grove",
     map = nil,
     isRegion = false,
-    regionId = 10
+    regionId = 10,
+    nearestTeleport = "Fairy Ring (BJS)",
+    nearestLodestone = "Yanille"
   },
   {
     id = 56,
@@ -442,7 +546,9 @@ return {
     name = "South-east Lost Grove",
     map = nil,
     isRegion = false,
-    regionId = 10
+    regionId = 10,
+    nearestTeleport = "Fairy Ring (BJS)",
+    nearestLodestone = "Yanille"
   },
   --#endregion  
   --#region Menaphos
@@ -453,6 +559,8 @@ return {
     map = nil,
     isRegion = true,
     regionId = -1,
+    nearestTeleport = "",
+    nearestLodestone = ""
   },
   {
     id = 57,
@@ -460,7 +568,9 @@ return {
     name = "Menaphos Worker District",
     map = nil,
     isRegion = false,
-    regionId = 11
+    regionId = 11,
+    nearestTeleport = "Leela's Favour (4)",
+    nearestLodestone = "Menaphos"
   },
   {
     id = 58,
@@ -468,7 +578,9 @@ return {
     name = "Menaphos Imperial District",
     map = nil,
     isRegion = false,
-    regionId = 11
+    regionId = 11,
+    nearestTeleport = "Leela's Favour (1)",
+    nearestLodestone = "Menaphos"
   },
   --#endregion  
   --#region Misthalin
@@ -479,6 +591,8 @@ return {
     map = nil,
     isRegion = true,
     regionId = -1,
+    nearestTeleport = "",
+    nearestLodestone = ""
   },
   {
     id = 59,
@@ -486,7 +600,9 @@ return {
     name = "Lumbridge South-east Mine",
     map = nil,
     isRegion = false,
-    regionId = 12
+    regionId = 12,
+    nearestTeleport = "Lumbridge Teleport",
+    nearestLodestone = "Lumbridge"
   },
   {
     id = 60,
@@ -494,7 +610,9 @@ return {
     name = "Varrock South-east Mine",
     map = nil,
     isRegion = false,
-    regionId = 12
+    regionId = 12,
+    nearestTeleport = "Archaeology Journal",
+    nearestLodestone = "Varrock"
   },
   {
     id = 61,
@@ -502,7 +620,9 @@ return {
     name = "Varrock South-west mine",
     map = nil,
     isRegion = false,
-    regionId = 12
+    regionId = 12,
+    nearestTeleport = "Combat Bracelet (2)",
+    nearestLodestone = "Varrock"
   },
   {
     id = 62,
@@ -510,7 +630,9 @@ return {
     name = "Aubury's Rune Shop",
     map = nil,
     isRegion = false,
-    regionId = 12
+    regionId = 12,
+    nearestTeleport = "Varrock Teleport",
+    nearestLodestone = "Varrock"
   },
   --#endregion  
   --#region Morytania
@@ -521,6 +643,8 @@ return {
     map = nil,
     isRegion = true,
     regionId = -1,
+    nearestTeleport = "",
+    nearestLodestone = ""
   },
   {
     id = 63,
@@ -528,7 +652,9 @@ return {
     name = "Burgh de Rott",
     map = nil,
     isRegion = false,
-    regionId = 13
+    regionId = 13,
+    nearestTeleport = "Drakan's Medallion (2)",
+    nearestLodestone = "Canifis"
   },
   {
     id = 64,
@@ -536,7 +662,9 @@ return {
     name = "Canifis",
     map = nil,
     isRegion = false,
-    regionId = 13
+    regionId = 13,
+    nearestTeleport = "Kharyll Teleport",
+    nearestLodestone = "Canifis"
   },
   {
     id = 65,
@@ -544,7 +672,9 @@ return {
     name = "Mos Le'Harmless",
     map = nil,
     isRegion = false,
-    regionId = 13
+    regionId = 13,
+    nearestTeleport = "Big Book o' Piracy (1)",
+    nearestLodestone = "Canifis"
   },
   --#endregion  
   --#region Piscatoris, Gnome Stronghold or Tirannwn
@@ -555,6 +685,8 @@ return {
     map = nil,
     isRegion = true,
     regionId = -1,
+    nearestTeleport = "",
+    nearestLodestone = ""
   },
   {
     id = 66,
@@ -562,7 +694,9 @@ return {
     name = "Tree Gnome Stronghold",
     map = nil,
     isRegion = false,
-    regionId = 14
+    regionId = 14,
+    nearestTeleport = "Spirit Tree (2)",
+    nearestLodestone = "Eagles' Peak"
   },
   {
     id = 67,
@@ -570,7 +704,9 @@ return {
     name = "Lletya",
     map = nil,
     isRegion = false,
-    regionId = 14
+    regionId = 14,
+    nearestTeleport = "Crystal Teleport Seed (1)",
+    nearestLodestone = "Tirannwn"
   },
   {
     id = 68,
@@ -578,7 +714,9 @@ return {
     name = "Piscatoris South Mine",
     map = nil,
     isRegion = false,
-    regionId = 14
+    regionId = 14,
+    nearestTeleport = "Fairy Ring (AKQ)",
+    nearestLodestone = "Eagles' Peak"
   },
   {
     id = 69,
@@ -586,7 +724,9 @@ return {
     name = "West of Piscatoris",
     map = nil,
     isRegion = false,
-    regionId = 14
+    regionId = 14,
+    nearestTeleport = "Fairy Ring (AKQ)",
+    nearestLodestone = "Eagles' Peak"
   },
   {
     id = 70,
@@ -594,7 +734,9 @@ return {
     name = "West of Incandescent Wisps",
     map = nil,
     isRegion = false,
-    regionId = 14
+    regionId = 14,
+    nearestTeleport = "Elder Divination Outfit (2)",
+    nearestLodestone = "Yanille"
   },
   --#endregion  
   --#region Wendlewick
@@ -605,6 +747,8 @@ return {
     map = nil,
     isRegion = true,
     regionId = -1,
+    nearestTeleport = "",
+    nearestLodestone = ""
   },
   {
     id = 71,
@@ -612,7 +756,9 @@ return {
     name = "Wendlewick Deserted Mine",
     map = nil,
     isRegion = false,
-    regionId = 15
+    regionId = 15,
+    nearestTeleport = "Fairy Ring (BKS)",
+    nearestLodestone = "Wendlewick"
   },
   {
     id = 72,
@@ -620,7 +766,9 @@ return {
     name = "Highweald Mine",
     map = nil,
     isRegion = false,
-    regionId = 15
+    regionId = 15,
+    nearestTeleport = "Wendlewick Teleport",
+    nearestLodestone = "Wendlewick"
   },
   --#endregion
   --#region Wilderness
@@ -632,6 +780,8 @@ return {
     map = nil,
     isRegion = true,
     regionId = -1,
+    nearestTeleport = "",
+    nearestLodestone = ""
   },
   {
     id = 73,
@@ -639,7 +789,9 @@ return {
     name = "Wilderness South Mine",
     map = nil,
     isRegion = false,
-    regionId = 16
+    regionId = 16,
+    nearestTeleport = "Wilderness Sword (1)",
+    nearestLodestone = "Edgeville"
   },
   {
     id = 74,
@@ -647,7 +799,9 @@ return {
     name = "Wilderness South-west Mine",
     map = nil,
     isRegion = false,
-    regionId = 16
+    regionId = 16,
+    nearestTeleport = "Wilderness Sword (3)",
+    nearestLodestone = "Edgeville"
   },
   {
     id = 75,
@@ -655,7 +809,9 @@ return {
     name = "Wilderness Hobgoblin Mine",
     map = nil,
     isRegion = false,
-    regionId = 16
+    regionId = 16,
+    nearestTeleport = "Wilderness Sword (2)",
+    nearestLodestone = "Wilderness"
   },
   {
     id = 76,
@@ -663,7 +819,9 @@ return {
     name = "Wilderness Lava Maze Mine",
     map = nil,
     isRegion = false,
-    regionId = 16
+    regionId = 16,
+    nearestTeleport = "Wilderness Sword (2)",
+    nearestLodestone = "Wilderness"
   },
   {
     id = 77,
@@ -671,7 +829,9 @@ return {
     name = "Wilderness Pirates' Hideout Mine",
     map = nil,
     isRegion = false,
-    regionId = 16
+    regionId = 16,
+    nearestTeleport = "Slayer Cape (1)",
+    nearestLodestone = "Wilderness"
   },
   {
     id = 78,
@@ -679,7 +839,9 @@ return {
     name = "Mage Arena",
     map = nil,
     isRegion = false,
-    regionId = 16
+    regionId = 16,
+    nearestTeleport = "Slayer Cape (1)",
+    nearestLodestone = "Wilderness"
   },
   --#endregion
 }

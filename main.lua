@@ -45,7 +45,7 @@ local tab2Text = tab2:AddText({
     y = 50,
 })
 --Tab 3
-local tab3Text1, tab3Text2, tab3Sprite1
+local tab3Text1, tab3Text2, tab3Text3, tab3Text4, tab3Sprite1
 
 --#endregion
 
@@ -307,6 +307,8 @@ tab2:AddSimpleButton("Clear", ClearScopeInfoClick, {inline = true})
 local function  CleanTab3()
     tab3Text1.content = ""
     tab3Text2.content = ""
+    tab3Text3.content = ""
+    tab3Text4.content = ""
     tab3Sprite1:SetSprite(Plugin.resources.empty)
 end
 local function FindLocationById(id)
@@ -369,6 +371,8 @@ local function CalloutBoxChange(field, reason, text)
         if(abbrev.isRegion) then
             tab3Text1.content = "Region: " .. abbrev.name
             tab3Text2.content = ""
+            tab3Text3.content = ""
+            tab3Text4.content = ""
         else
             local calloutRegion = FindLocationById(abbrev.regionId)
             tab3Text1.content = abbrev.name
@@ -377,6 +381,8 @@ local function CalloutBoxChange(field, reason, text)
             else
                 tab3Text2.content = "(Region: " .. calloutRegion.name .. ")"
             end
+            tab3Text3.content = "Nearest Teleport: " .. abbrev.nearestTeleport
+            tab3Text4.content = "Nearest Lodestone: " .. abbrev.nearestLodestone
         end
 
         if(abbrev.map == nil) then
@@ -391,6 +397,9 @@ local calloutLookup = tab3:AddTextField({ placeholder = "Look up location", onCh
 
 tab3Text1 = tab3:AddText({ text = "" })
 tab3Text2 = tab3:AddText({ text = "" })
+tab3Text3 = tab3:AddText({ text = "" })
+tab3Text4 = tab3:AddText({ text = "" })
+tab3:AddDivider()
 tab3Sprite1 = tab3:AddSprite(Plugin.resources.empty, {width = 375, height = 215})
 
 --#endregion
