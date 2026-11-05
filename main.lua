@@ -51,6 +51,17 @@ local tab2Text = tab2:AddText({
 })
 --Tab 3
 local tab3Text1, tab3Text2, tab3Text3, tab3Text4, tab3Text5, tab3Sprite1
+--#endregion
+
+--#region Variables
+local shapeListTab1
+local shapeListTab3
+local colorBlueA = 0x0000FF27
+local colorBlue = 0x0000FFAA
+local colorGreenA = 0x00FF0027
+local colorGreen = 0x00FF00AA
+local subscribedTab1 = false
+local subscribedTab3 = false
 
 --#endregion
 
@@ -96,34 +107,19 @@ local function CheckLimit(coordGrid1, coordGrid2)
     end
     return false
 end
---#endregion
-
---#region Star Information
-local shapeList = {}
-local colorBlueA = 0x0000FF27
-local colorBlue = 0x0000FFAA
-
-
-local colorGreenA = 0x00FF0027
-local colorGreen = 0x00FF00AA
-
-local subscribedTab1 = false
-local subscribedTab2 = false
-
-local function ClearShapeList()
-    if(#shapeList > 0) then
-        shapeList[1]:Destroy()
-        shapeList[1] = nil
+local function ClearShapeListTab1()
+    if(shapeListTab1 ~= nil) then
+        shapeListTab1:Destroy()
+        shapeListTab1 = nil
     end
 end
-local function ClearTextTab1()
-    tab1Text1.content = ""
-    tab1Text2.content = ""
-    tab1Text3.content = ""
-    tab1Text4.content = ""
-    tab1Text5.content = ""
+local function ClearShapeListTab3()
+    if(shapeListTab3 ~= nil) then
+        shapeListTab3:Destroy()
+        shapeListTab3 = nil
+    end
 end
-local function CreateBox(coordGrid, colorAlpha, colorEdge)
+local function CreateBox(coordGrid, colorAlpha, colorEdge, shapeToClear)
     -- A basic tile shape
     local tileShape = ShapeData.new()
     -- 2x2 box
@@ -164,17 +160,36 @@ local function CreateBox(coordGrid, colorAlpha, colorEdge)
     -- Set the instance height
     instancePos.y = startHeight
 
-    ClearShapeList()
+    if(shapeToClear == "tab1") then
+        ClearShapeListTab1()
+    end
+    if(shapeToClear == "tab3") then
+        ClearShapeListTab3()
+    end
 
-    print(tostring(instancePos))
     -- Create the named shape instance
-    local instance = ShapeList.CreateInstance("myInstance")
+    local instance = ShapeList.CreateInstance("myInstance"..shapeToClear)
     instance:SetShapeData(tileShape)
     instance.translation = instancePos
     instance.ignoreDepth = true
 
     -- Add to shape list so we can keep track and remove when no longer required
-    shapeList[#shapeList + 1] = instance
+    if(shapeToClear == "tab1") then
+        shapeListTab1 = instance
+    elseif(shapeToClear == "tab3") then
+        shapeListTab3 = instance
+    end
+end
+--#endregion
+
+
+--#region Star Information
+local function ClearTextTab1()
+    tab1Text1.content = ""
+    tab1Text2.content = ""
+    tab1Text3.content = ""
+    tab1Text4.content = ""
+    tab1Text5.content = ""
 end
 local function LookUpId(configValue)
     for _, star in ipairs(Stars) do
@@ -184,7 +199,6 @@ local function LookUpId(configValue)
     end
     return nil
 end
-
 local function SetTextTab1()
     ClearTextTab1()
 
@@ -239,7 +253,6 @@ local function SetTextTab1()
 
     return coordGrid
 end
-
 local function StarInfoClick(button, active)
     if(not subscribedTab1) then
         subscribedTab1 = true
@@ -247,21 +260,20 @@ local function StarInfoClick(button, active)
         Event.ServerLogic.Subscribe("StarLocatorEvent", function()
             local coordGrid = SetTextTab1()
             if(coordGrid == nil) then
-                ClearShapeList()
+                ClearShapeListTab1()
                 return
             else
-                CreateBox(coordGrid, colorGreenA, colorGreen)
+                CreateBox(coordGrid, colorGreenA, colorGreen, "tab1")
             end
         end)
     else
         subscribedTab1 = false
         ClearTextTab1()
-        ClearShapeList()
+        ClearShapeListTab1()
         button:SetText("Start searching for stars")
         Event.ServerLogic.Unsubscribe("StarLocatorEvent")
     end
 end
-
 local starInfoButton = tab1:AddFancyButton("Start searching for stars", StarInfoClick, { variant = "positive" })
 
 --Star active
@@ -319,6 +331,7 @@ tab2:AddSimpleButton("Clear", ClearScopeInfoClick, {inline = true})
 --#endregion
 
 --#region Look up Information
+
 local coordGrid = nil
 
 local function  CleanTab3()
@@ -326,6 +339,7 @@ local function  CleanTab3()
     tab3Text2.content = ""
     tab3Text3.content = ""
     tab3Text4.content = ""
+    tab3Text5.content = ""
     coordGrid = nil
     tab3Sprite1:SetSprite(Plugin.resources.empty)
 end
@@ -417,29 +431,28 @@ local function CalloutBoxChange(field, reason, text)
 end
 local calloutLookup = tab3:AddTextField({ placeholder = "Look up location", onChange = CalloutBoxChange, width = 175})
 
-local lookupLocation = false
 local function GoToLocation(button, active)
-   ClearShapeList()
-    if(not subscribedTab2) then
+   ClearShapeListTab3()
+    if(not subscribedTab3) then
         if(coordGrid == nil) then
             return
         end
-        subscribedTab2 = true
+        subscribedTab3 = true
         button:SetText("Stop travel")
         Event.ServerLogic.Subscribe("LocationLocatorEvent", function()
             if(coordGrid == nil) then
-                ClearShapeList()
+                ClearShapeListTab3()
                 return
             else
                 local playerCoordGrid = Player.GetEntity().coordGrid
                 tab3Text5.content = "You are "..CheckDirection(playerCoordGrid, coordGrid).." of the location"
-                CreateBox(coordGrid, colorBlueA, colorBlue)
+                CreateBox(coordGrid, colorBlueA, colorBlue, "tab3")
             end
         end)
     else
-        subscribedTab2 = false
+        subscribedTab3 = false
         button:SetText("Go to")
-        ClearShapeList()
+        ClearShapeListTab3()
         tab3Text5.content = ""
         Event.ServerLogic.Unsubscribe("LocationLocatorEvent")
     end
@@ -447,15 +460,20 @@ local function GoToLocation(button, active)
 end
 tab3:AddFancyButton("Go to", GoToLocation, {inline = true, width = 75})
 
-
+--Name of location
 tab3Text1 = tab3:AddText({ text = "" })
+--Region if applicable
 tab3Text2 = tab3:AddText({ text = "" })
+--Nearest teleport if applicable
 tab3Text3 = tab3:AddText({ text = "" })
+--Nearest lodestone if applicable
 tab3Text4 = tab3:AddText({ text = "" })
 
 tab3:AddDivider({marginTop = 1, marginBottom = 1})
 
+--Direct to location
 tab3Text5 = tab3:AddText({ text = "" })
+--Map of location
 tab3Sprite1 = tab3:AddSprite(Plugin.resources.empty, {width = 375, height = 215})
 
 --#endregion
@@ -466,7 +484,7 @@ function PluginShutdown()
     if(subscribedTab1) then
         Event.ServerLogic.Unsubscribe("StarLocatorEvent")
     end
-    if(subscribedTab2) then
+    if(subscribedTab3) then
         Event.ServerLogic.Unsubscribe("LocationLocatorEvent")
     end
     MainWindow:Destroy()
