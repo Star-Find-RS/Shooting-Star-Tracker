@@ -26,11 +26,16 @@ myGroupBox:Destroy()
 
 --#region Start of main application
 local parent = ui.Interfaces:GetComponent(id.Component.TOPLEVEL_V2__GAME_AREA)
-local MainWindow = prettyui.Window.new(parent, { title = "Shooting Star Tracker", x = 0, y = 350, width = 425, height = 450, rowBackgroundColours = { 0x24211EFF, 0x2E2825FF } })
-
+local MainWindow = prettyui.Window.new(parent, { title = "Shooting Star Tracker", x = 0, y = 350, width = 425, height = 450, scrollable = false, rowBackgroundColours = { 0x24211EFF, 0x2E2825FF } })
+local tabList
 local function OnTabChange(tabs, index, value, page)
+    if(index == 3) then
+        MainWindow:SetSize(425, 600)
+    else
+        MainWindow:SetSize(425, 450)
+    end
 end
-local tabList = MainWindow:AddTabs({{text = "Star Info"}, {text = "Scope Info"}, {text = "Lookup"}}, { height = 375, onChange = OnTabChange })
+tabList = MainWindow:AddTabs({{text = "Star Info"}, {text = "Scope Info"}, {text = "Lookup"}}, { height = 525, width = 375, onChange = OnTabChange })
 local tab1 = tabList:GetPage(1)
 local tab2 = tabList:GetPage(2)
 local tab3 = tabList:GetPage(3)

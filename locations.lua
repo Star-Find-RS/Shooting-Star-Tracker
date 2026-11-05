@@ -112,13 +112,13 @@ return {
     id = 22,
     abbreviation = {"art", "mg", "mining guild", "east falador", "east fally"}  ,
     name = "Artisans' Workshop",
-    map = nil,
+    map = Plugin.resources.Locations.map_art,
     isRegion = false,
     regionId = 2,
     nearestTeleport = "Modified Blacksmith's Helmet",
     nearestLodestone = "Falador",
-    coordGridX = 3037,
-    coordGridZ = 3345,
+    coordGridX = 3036,
+    coordGridZ = 3346,
     coordGridLevel = 0
   },
   {
@@ -341,7 +341,7 @@ return {
     id = 6,
     abbreviation = {},
     name = "The Feldip Hills",
-    map = nil,
+    map = Plugin.resources.Regions.map_feld,
     isRegion = true,
     regionId = -1,
     nearestTeleport = "",
@@ -354,7 +354,7 @@ return {
     id = 34,
     abbreviation = {"feld"},
     name = "Western Feldip Hills",
-    map = nil,
+    map = Plugin.resources.Regions.map_feld,
     isRegion = false,
     regionId = 6,
     nearestTeleport = "Fairy Ring (AKS)",
@@ -369,7 +369,7 @@ return {
     id = 7,
     abbreviation = {"fl", "f/l"},
     name = "Fremennik Province or Lunar Isle",
-    map = nil,
+    map = Plugin.resources.Regions.map_frem,
     isRegion = true,
     regionId = -1,
     nearestTeleport = "",
@@ -434,7 +434,7 @@ return {
     id = 39,
     abbreviation = {"neitz", "neitiznot"},
     name = "Fremennik Isles Mine",
-    map = nil,
+    map = Plugin.resources.Locations.map_neitz,
     isRegion = false,
     regionId = 7,
     nearestTeleport = "Enchanted Lyre (3)",
@@ -480,8 +480,8 @@ return {
     regionId = 8,
     nearestTeleport = "Cape of Legends",
     nearestLodestone = "Ardougne",
-    coordGridX = 0,
-    coordGridZ = 0,
+    coordGridX = 2705,
+    coordGridZ = 3333,
     coordGridLevel = 0
   },
   {
@@ -493,8 +493,8 @@ return {
     regionId = 8,
     nearestTeleport = "Kandarin Monastery Teleport",
     nearestLodestone = "Ardougne",
-    coordGridX = 0,
-    coordGridZ = 0,
+    coordGridX = 2608,
+    coordGridZ = 3233,
     coordGridLevel = 0
   },
   {
@@ -506,8 +506,8 @@ return {
     regionId = 8,
     nearestTeleport = "Luck of the Dwarves (4)",
     nearestLodestone = "Seers' Village",
-    coordGridX = 0,
-    coordGridZ = 0,
+    coordGridX = 2589,
+    coordGridZ = 3479,
     coordGridLevel = 0
   },
   {
@@ -519,8 +519,8 @@ return {
     regionId = 8,
     nearestTeleport = "Watchtower Teleport",
     nearestLodestone = "Yanille",
-    coordGridX = 0,
-    coordGridZ = 0,
+    coordGridX = 2602,
+    coordGridZ = 3086,
     coordGridLevel = 0
   },
   {
@@ -532,8 +532,8 @@ return {
     regionId = 8,
     nearestTeleport = "Khazard Teleport",
     nearestLodestone = "Yanille",
-    coordGridX = 0,
-    coordGridZ = 0,
+    coordGridX = 2628,
+    coordGridZ = 3140,
     coordGridLevel = 0
   },
   {
@@ -545,8 +545,8 @@ return {
     regionId = 8,
     nearestTeleport = "Catherby Lodestone",
     nearestLodestone = "Catherby",
-    coordGridX = 0,
-    coordGridZ = 0,
+    coordGridX = 2806,
+    coordGridZ = 3441,
     coordGridLevel = 0
   },
   --#endregion  
@@ -573,21 +573,21 @@ return {
     regionId = 9,
     nearestTeleport = "Al Kharid Lodestone",
     nearestLodestone = "Al Kharid",
-    coordGridX = 0,
-    coordGridZ = 0,
+    coordGridX = 3282,
+    coordGridZ = 3180,
     coordGridLevel = 0
   },
   {
     id = 48,
-    abbreviation = {"scorps", "scorpion mine", "al kharid resource dungeon", "garden of kharid"},
+    abbreviation = {"scorp", "scorps", "scorpion mine", "al kharid resource dungeon", "garden of kharid"},
     name = "Al Kharid Mine",
     map = nil,
     isRegion = false,
     regionId = 9,
     nearestTeleport = "Dungeoneering Cape (0-5)",
     nearestLodestone = "Al Kharid",
-    coordGridX = 0,
-    coordGridZ = 0,
+    coordGridX = 3297,
+    coordGridZ = 3296,
     coordGridLevel = 0
   },
   {
@@ -599,8 +599,8 @@ return {
     regionId = 9,
     nearestTeleport = "Mystical Sand Seed",
     nearestLodestone = "Al Kharid",
-    coordGridX = 0,
-    coordGridZ = 0,
+    coordGridX = 3342,
+    coordGridZ = 3268,
     coordGridLevel = 0
   },
   {
@@ -612,8 +612,8 @@ return {
     regionId = 9,
     nearestTeleport = "Desert Amulet (2)",
     nearestLodestone = "Bandit Camp",
-    coordGridX = 0,
-    coordGridZ = 0,
+    coordGridX = 3456,
+    coordGridZ = 3138,
     coordGridLevel = 0
   },
   {
@@ -625,8 +625,8 @@ return {
     regionId = 9,
     nearestTeleport = "Desert Amulet (1)",
     nearestLodestone = "Bandit Camp",
-    coordGridX = 0,
-    coordGridZ = 0,
+    coordGridX = 3316,
+    coordGridZ = 2867,
     coordGridLevel = 0
   },
   {
@@ -638,8 +638,8 @@ return {
     regionId = 9,
     nearestTeleport = "Desert Amulet (1)",
     nearestLodestone = "Bandit Camp",
-    coordGridX = 0,
-    coordGridZ = 0,
+    coordGridX = 3434,
+    coordGridZ = 2889,
     coordGridLevel = 0
   },
   {
@@ -651,8 +651,8 @@ return {
     regionId = 9,
     nearestTeleport = "Camulet",
     nearestLodestone = "Bandit Camp",
-    coordGridX = 0,
-    coordGridZ = 0,
+    coordGridX = 3171,
+    coordGridZ = 2910,
     coordGridLevel = 0
   },
   --#endregion  
@@ -679,8 +679,8 @@ return {
     regionId = 10,
     nearestTeleport = "Northern Lost Grove Teleport",
     nearestLodestone = "Yanille",
-    coordGridX = 0,
-    coordGridZ = 0,
+    coordGridX = 1377,
+    coordGridZ = 5729,
     coordGridLevel = 0
   },
   {
@@ -692,8 +692,8 @@ return {
     regionId = 10,
     nearestTeleport = "Fairy Ring (BJS)",
     nearestLodestone = "Yanille",
-    coordGridX = 0,
-    coordGridZ = 0,
+    coordGridX = 1309,
+    coordGridZ = 5624,
     coordGridLevel = 0
   },
   {
@@ -705,8 +705,8 @@ return {
     regionId = 10,
     nearestTeleport = "Fairy Ring (BJS)",
     nearestLodestone = "Yanille",
-    coordGridX = 0,
-    coordGridZ = 0,
+    coordGridX = 1431,
+    coordGridZ = 5601,
     coordGridLevel = 0
   },
   --#endregion  
@@ -733,8 +733,8 @@ return {
     regionId = 11,
     nearestTeleport = "Leela's Favour (4)",
     nearestLodestone = "Menaphos",
-    coordGridX = 0,
-    coordGridZ = 0,
+    coordGridX = 3161,
+    coordGridZ = 2797,
     coordGridLevel = 0
   },
   {
@@ -746,8 +746,8 @@ return {
     regionId = 11,
     nearestTeleport = "Leela's Favour (1)",
     nearestLodestone = "Menaphos",
-    coordGridX = 0,
-    coordGridZ = 0,
+    coordGridX = 3198,
+    coordGridZ = 2743,
     coordGridLevel = 0
   },
   --#endregion  
@@ -774,8 +774,8 @@ return {
     regionId = 12,
     nearestTeleport = "Lumbridge Teleport",
     nearestLodestone = "Lumbridge",
-    coordGridX = 0,
-    coordGridZ = 0,
+    coordGridX = 3232,
+    coordGridZ = 3156,
     coordGridLevel = 0
   },
   {
@@ -787,8 +787,8 @@ return {
     regionId = 12,
     nearestTeleport = "Archaeology Journal",
     nearestLodestone = "Varrock",
-    coordGridX = 0,
-    coordGridZ = 0,
+    coordGridX = 3290,
+    coordGridZ = 3353,
     coordGridLevel = 0
   },
   {
@@ -800,21 +800,21 @@ return {
     regionId = 12,
     nearestTeleport = "Combat Bracelet (2)",
     nearestLodestone = "Varrock",
-    coordGridX = 0,
-    coordGridZ = 0,
+    coordGridX = 3175,
+    coordGridZ = 3362,
     coordGridLevel = 0
   },
   {
     id = 62,
-    abbreviation = {"aub", "aubury", "varrock east bank", "varrock east", "east bank"},
+    abbreviation = {"aub", "aubury", "varrock east bank", "varrock east", "east bank", "east varrock"},
     name = "Aubury's Rune Shop",
     map = nil,
     isRegion = false,
     regionId = 12,
     nearestTeleport = "Varrock Teleport",
     nearestLodestone = "Varrock",
-    coordGridX = 0,
-    coordGridZ = 0,
+    coordGridX = 3258,
+    coordGridZ = 3408,
     coordGridLevel = 0
   },
   --#endregion  
@@ -841,8 +841,8 @@ return {
     regionId = 13,
     nearestTeleport = "Drakan's Medallion (2)",
     nearestLodestone = "Canifis",
-    coordGridX = 0,
-    coordGridZ = 0,
+    coordGridX = 3500,
+    coordGridZ = 3219,
     coordGridLevel = 0
   },
   {
@@ -854,8 +854,8 @@ return {
     regionId = 13,
     nearestTeleport = "Kharyll Teleport",
     nearestLodestone = "Canifis",
-    coordGridX = 0,
-    coordGridZ = 0,
+    coordGridX = 3506,
+    coordGridZ = 3485,
     coordGridLevel = 0
   },
   {
@@ -867,8 +867,8 @@ return {
     regionId = 13,
     nearestTeleport = "Big Book o' Piracy (1)",
     nearestLodestone = "Canifis",
-    coordGridX = 0,
-    coordGridZ = 0,
+    coordGridX = 3686,
+    coordGridZ = 2969,
     coordGridLevel = 0
   },
   --#endregion  
@@ -895,8 +895,8 @@ return {
     regionId = 14,
     nearestTeleport = "Spirit Tree (2)",
     nearestLodestone = "Eagles' Peak",
-    coordGridX = 0,
-    coordGridZ = 0,
+    coordGridX = 2447,
+    coordGridZ = 3437,
     coordGridLevel = 0
   },
   {
@@ -908,8 +908,8 @@ return {
     regionId = 14,
     nearestTeleport = "Crystal Teleport Seed (1)",
     nearestLodestone = "Tirannwn",
-    coordGridX = 0,
-    coordGridZ = 0,
+    coordGridX = 2324,
+    coordGridZ = 3156,
     coordGridLevel = 0
   },
   {
@@ -921,8 +921,8 @@ return {
     regionId = 14,
     nearestTeleport = "Fairy Ring (AKQ)",
     nearestLodestone = "Eagles' Peak",
-    coordGridX = 0,
-    coordGridZ = 0,
+    coordGridX = 2341,
+    coordGridZ = 3635,
     coordGridLevel = 0
   },
   {
@@ -934,21 +934,21 @@ return {
     regionId = 14,
     nearestTeleport = "Fairy Ring (AKQ)",
     nearestLodestone = "Eagles' Peak",
-    coordGridX = 0,
-    coordGridZ = 0,
+    coordGridX = 2240,
+    coordGridZ = 3642,
     coordGridLevel = 0
   },
   {
     id = 70,
     abbreviation = {"pois", "pw", "incan", "poison waste"},
     name = "West of Incandescent Wisps",
-    map = nil,
+    map = Plugin.resources.Locations.map_pw,
     isRegion = false,
     regionId = 14,
     nearestTeleport = "Elder Divination Outfit (2)",
     nearestLodestone = "Yanille",
-    coordGridX = 0,
-    coordGridZ = 0,
+    coordGridX = 2241,
+    coordGridZ = 3038,
     coordGridLevel = 0
   },
   --#endregion  
@@ -975,8 +975,8 @@ return {
     regionId = 15,
     nearestTeleport = "Fairy Ring (BKS)",
     nearestLodestone = "Wendlewick",
-    coordGridX = 0,
-    coordGridZ = 0,
+    coordGridX = 3665,
+    coordGridZ = 1362,
     coordGridLevel = 0
   },
   {
@@ -988,13 +988,12 @@ return {
     regionId = 15,
     nearestTeleport = "Wendlewick Teleport",
     nearestLodestone = "Wendlewick",
-    coordGridX = 0,
-    coordGridZ = 0,
+    coordGridX = 3516,
+    coordGridZ = 1682,
     coordGridLevel = 0
   },
   --#endregion
   --#region Wilderness
-  
   {
     id = 16,
     abbreviation = {"wild"},
@@ -1017,8 +1016,8 @@ return {
     regionId = 16,
     nearestTeleport = "Wilderness Sword (1)",
     nearestLodestone = "Edgeville",
-    coordGridX = 0,
-    coordGridZ = 0,
+    coordGridX = 3108,
+    coordGridZ = 3569,
     coordGridLevel = 0
   },
   {
@@ -1030,8 +1029,8 @@ return {
     regionId = 16,
     nearestTeleport = "Wilderness Sword (3)",
     nearestLodestone = "Edgeville",
-    coordGridX = 0,
-    coordGridZ = 0,
+    coordGridX = 3016,
+    coordGridZ = 3589,
     coordGridLevel = 0
   },
   {
@@ -1043,8 +1042,8 @@ return {
     regionId = 16,
     nearestTeleport = "Wilderness Sword (2)",
     nearestLodestone = "Wilderness",
-    coordGridX = 0,
-    coordGridZ = 0,
+    coordGridX = 3032,
+    coordGridZ = 3796,
     coordGridLevel = 0
   },
   {
@@ -1056,8 +1055,8 @@ return {
     regionId = 16,
     nearestTeleport = "Wilderness Sword (2)",
     nearestLodestone = "Wilderness",
-    coordGridX = 0,
-    coordGridZ = 0,
+    coordGridX = 3060,
+    coordGridZ = 3893,
     coordGridLevel = 0
   },
   {
@@ -1069,8 +1068,8 @@ return {
     regionId = 16,
     nearestTeleport = "Slayer Cape (1)",
     nearestLodestone = "Wilderness",
-    coordGridX = 0,
-    coordGridZ = 0,
+    coordGridX = 3049,
+    coordGridZ = 3940,
     coordGridLevel = 0
   },
   {
@@ -1082,8 +1081,8 @@ return {
     regionId = 16,
     nearestTeleport = "Slayer Cape (1)",
     nearestLodestone = "Wilderness",
-    coordGridX = 0,
-    coordGridZ = 0,
+    coordGridX = 3091,
+    coordGridZ = 3962,
     coordGridLevel = 0
   },
   --#endregion
