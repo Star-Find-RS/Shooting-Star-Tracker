@@ -50,7 +50,7 @@ local tab2Text = tab2:AddText({
     y = 50,
 })
 --Tab 3
-local tab3Text1, tab3Text2, tab3Text3, tab3Text4, tab3Sprite1
+local tab3Text1, tab3Text2, tab3Text3, tab3Text4, tab3Text5, tab3Sprite1
 
 --#endregion
 
@@ -107,7 +107,8 @@ local colorBlue = 0x0000FFAA
 local colorGreenA = 0x00FF0027
 local colorGreen = 0x00FF00AA
 
-local subscribed = false
+local subscribedTab1 = false
+local subscribedTab2 = false
 
 local function ClearShapeList()
     if(#shapeList > 0) then
@@ -240,8 +241,8 @@ local function SetTextTab1()
 end
 
 local function StarInfoClick(button, active)
-    if(not subscribed) then
-        subscribed = true
+    if(not subscribedTab1) then
+        subscribedTab1 = true
         button:SetText("Stop searching for stars")
         Event.ServerLogic.Subscribe("StarLocatorEvent", function()
             local coordGrid = SetTextTab1()
@@ -253,7 +254,7 @@ local function StarInfoClick(button, active)
             end
         end)
     else
-        subscribed = false
+        subscribedTab1 = false
         ClearTextTab1()
         ClearShapeList()
         button:SetText("Start searching for stars")
@@ -419,22 +420,30 @@ local calloutLookup = tab3:AddTextField({ placeholder = "Look up location", onCh
 local lookupLocation = false
 local function GoToLocation(button, active)
    ClearShapeList()
-   if(lookupLocation == false) then
+    if(not subscribedTab2) then
         if(coordGrid == nil) then
             return
         end
-        lookupLocation = true
+        subscribedTab2 = true
         button:SetText("Stop travel")
-        if(coordGrid == nil) then
+        Event.ServerLogic.Subscribe("LocationLocatorEvent", function()
+            if(coordGrid == nil) then
+                ClearShapeList()
                 return
-        end
-        print("Current location: "..Player.GetEntity().coordGrid.x.." "..Player.GetEntity().coordGrid.z.." "..Player.GetEntity().coordGrid.level)
-        print("Going to location: "..coordGrid.x..","..coordGrid.z)
-        CreateBox(coordGrid, colorBlueA, colorBlue)
+            else
+                local playerCoordGrid = Player.GetEntity().coordGrid
+                tab3Text5.content = "You are "..CheckDirection(playerCoordGrid, coordGrid).." of the location"
+                CreateBox(coordGrid, colorBlueA, colorBlue)
+            end
+        end)
     else
-        lookupLocation = false
+        subscribedTab2 = false
         button:SetText("Go to")
+        ClearShapeList()
+        tab3Text5.content = ""
+        Event.ServerLogic.Unsubscribe("LocationLocatorEvent")
     end
+
 end
 tab3:AddFancyButton("Go to", GoToLocation, {inline = true, width = 75})
 
@@ -444,8 +453,9 @@ tab3Text2 = tab3:AddText({ text = "" })
 tab3Text3 = tab3:AddText({ text = "" })
 tab3Text4 = tab3:AddText({ text = "" })
 
-
 tab3:AddDivider({marginTop = 1, marginBottom = 1})
+
+tab3Text5 = tab3:AddText({ text = "" })
 tab3Sprite1 = tab3:AddSprite(Plugin.resources.empty, {width = 375, height = 215})
 
 --#endregion
@@ -453,8 +463,11 @@ tab3Sprite1 = tab3:AddSprite(Plugin.resources.empty, {width = 375, height = 215}
 MainWindow:RefreshRowBackgrounds()
 
 function PluginShutdown()
-    if(subscribed) then
+    if(subscribedTab1) then
         Event.ServerLogic.Unsubscribe("StarLocatorEvent")
+    end
+    if(subscribedTab2) then
+        Event.ServerLogic.Unsubscribe("LocationLocatorEvent")
     end
     MainWindow:Destroy()
 end
