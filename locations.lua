@@ -8,7 +8,10 @@ return {
     isRegion = true,
     regionId = -1,
     nearestTeleport = "",
-    nearestLodestone = ""
+    nearestLodestone = "",
+    coordGridX = 0,
+    coordGridZ = 0,
+    coordGridLevel = 0
   },
   {
     id = 17,
@@ -18,7 +21,10 @@ return {
     isRegion = false,
     regionId = 0,
     nearestTeleport = "Fairy ring (DLP)",
-    nearestLodestone = "Amberfell"
+    nearestLodestone = "Wendlewick",
+    coordGridX = 3696,
+    coordGridZ = 1606,
+    coordGridLevel = 0
   },
   --#endregion
   --#region Anachronia
@@ -30,7 +36,10 @@ return {
     isRegion = true,
     regionId = -1,
     nearestTeleport = "",
-    nearestLodestone = ""
+    nearestLodestone = "",
+    coordGridX = 0,
+    coordGridZ = 0,
+    coordGridLevel = 0
   },
   {
     id = 18,
@@ -40,7 +49,10 @@ return {
     isRegion = false,
     regionId = 1,
     nearestTeleport = "Rex Matriarch Boss Portal",
-    nearestLodestone = "Anachronia"
+    nearestLodestone = "Anachronia",
+    coordGridX = 5514,
+    coordGridZ = 2324,
+    coordGridLevel = 0
   },
   {
     id = 19,
@@ -50,7 +62,10 @@ return {
     isRegion = false,
     regionId = 1,
     nearestTeleport = "Archaeology Journal",
-    nearestLodestone = "Anachronia"
+    nearestLodestone = "Anachronia",
+    coordGridX = 5339,
+    coordGridZ = 2220,
+    coordGridLevel = 0
   },
   {
     id = 20,
@@ -60,7 +75,10 @@ return {
     isRegion = false,
     regionId = 1,
     nearestTeleport = "Slayer Cape (2)",
-    nearestLodestone = "Anachronia"
+    nearestLodestone = "Anachronia",
+    coordGridX = 5608,
+    coordGridZ = 2170,
+    coordGridLevel = 0
   },
   --#endregion
   --#region Asgarnia
@@ -72,7 +90,10 @@ return {
     isRegion = true,
     regionId = -1,
     nearestTeleport = "",
-    nearestLodestone = ""
+    nearestLodestone = "",
+    coordGridX = 0,
+    coordGridZ = 0,
+    coordGridLevel = 0
   },
   {
     id = 21   ,
@@ -82,7 +103,10 @@ return {
     isRegion = false,
     regionId = 2,
     nearestTeleport = "Skills Necklace (3)",
-    nearestLodestone = "Port Sarim"
+    nearestLodestone = "Port Sarim",
+    coordGridX = 2945,
+    coordGridZ = 3272,
+    coordGridLevel = 0
   },
   {
     id = 22,
@@ -92,7 +116,10 @@ return {
     isRegion = false,
     regionId = 2,
     nearestTeleport = "Modified Blacksmith's Helmet",
-    nearestLodestone = "Falador"
+    nearestLodestone = "Falador",
+    coordGridX = 3037,
+    coordGridZ = 3345,
+    coordGridLevel = 0
   },
   {
     id = 23,
@@ -102,7 +129,10 @@ return {
     isRegion = false,
     regionId = 2,
     nearestTeleport = "Combat Bracelet (1)",
-    nearestLodestone = "Burthorpe"
+    nearestLodestone = "Burthorpe",
+    coordGridX = 2916,
+    coordGridZ = 3496,
+    coordGridLevel = 0
   },
   {
     id = 24 ,
@@ -112,7 +142,10 @@ return {
     isRegion = false,
     regionId = 2,
     nearestTeleport = "Teleport to House",
-    nearestLodestone = "Port Sarim"
+    nearestLodestone = "Port Sarim",
+    coordGridX = 2974,
+    coordGridZ = 3240,
+    coordGridLevel = 0
   },
   {
     id = 25,
@@ -122,7 +155,10 @@ return {
     isRegion = false,
     regionId = 2,
     nearestTeleport = "Skills Necklace (3)",
-    nearestLodestone = "Falador"
+    nearestLodestone = "Falador",
+    coordGridX = 2902,
+    coordGridZ = 3349,
+    coordGridLevel = 0
   },
   {
     id = 26,
@@ -132,7 +168,10 @@ return {
     isRegion = false,
     regionId = 2,
     nearestTeleport = "Balloon Network (Taverley)",
-    nearestLodestone = "Taverley"
+    nearestLodestone = "Taverley",
+    coordGridX = 2921,
+    coordGridZ = 3404,
+    coordGridLevel = 0
   },
   --#endregion
   --#region Ashdale
@@ -144,7 +183,10 @@ return {
     isRegion = true,
     regionId = -1,
     nearestTeleport = "",
-    nearestLodestone = ""
+    nearestLodestone = "",
+    coordGridX = 0,
+    coordGridZ = 0,
+    coordGridLevel = 0
   },
   {
     id = 27,
@@ -154,7 +196,10 @@ return {
     isRegion = false,
     regionId = 3,
     nearestTeleport = "Ashdale Lodestone",
-    nearestLodestone = "Ashdale"
+    nearestLodestone = "Ashdale",
+    coordGridX = 2512,
+    coordGridZ = 2680,
+    coordGridLevel = 2
   },
   {
     id = 28,
@@ -164,7 +209,10 @@ return {
     isRegion = false,
     regionId = 3,
     nearestTeleport = "Ashdale Lodestone",
-    nearestLodestone = "Ashdale"
+    nearestLodestone = "Ashdale",
+    coordGridX = 2461,
+    coordGridZ = 2714,
+    coordGridLevel = 2
   },
   --#endregion
   --#region Crandor or Karamja
@@ -176,7 +224,10 @@ return {
     isRegion = true,
     regionId = -1,
     nearestTeleport = "",
-    nearestLodestone = ""
+    nearestLodestone = "",
+    coordGridX = 0,
+    coordGridZ = 0,
+    coordGridLevel = 0
   },
   {
     id = 29,
@@ -186,7 +237,10 @@ return {
     isRegion = false,
     regionId = 4,
     nearestTeleport = "Dungeoneering Cape (4)",
-    nearestLodestone = "Karamja"
+    nearestLodestone = "Karamja",
+    coordGridX = 2822,
+    coordGridZ = 3238,
+    coordGridLevel = 0
   },
   {
     id = 30,
@@ -196,7 +250,10 @@ return {
     isRegion = false,
     regionId = 4,
     nearestTeleport = "Karamja Lodestone",
-    nearestLodestone = "Karamja"
+    nearestLodestone = "Karamja",
+    coordGridX = 2737,
+    coordGridZ = 3222,
+    coordGridLevel = 0
   },
   {
     id = 31,
@@ -206,7 +263,10 @@ return {
     isRegion = false,
     regionId = 4,
     nearestTeleport = "Karamja Lodestone",
-    nearestLodestone = "Karamja"
+    nearestLodestone = "Karamja",
+    coordGridX = 2742,
+    coordGridZ = 3143,
+    coordGridLevel = 0
   },
   {
     id = 32,
@@ -216,7 +276,10 @@ return {
     isRegion = false,
     regionId = 4,
     nearestTeleport = "Fairy Ring (CKR)",
-    nearestLodestone = "Karamja"
+    nearestLodestone = "Karamja",
+    coordGridX = 2845,
+    coordGridZ = 3037,
+    coordGridLevel = 0
   },
   {
     id = 33,
@@ -226,7 +289,10 @@ return {
     isRegion = false,
     regionId = 4,
     nearestTeleport = "Karamja Gloves 3",
-    nearestLodestone = "Karamja"
+    nearestLodestone = "Karamja",
+    coordGridX = 2827,
+    coordGridZ = 2999,
+    coordGridLevel = 0
   },
   --#endregion
   --#region Daemonheim
@@ -238,7 +304,10 @@ return {
     isRegion = true,
     regionId = -1,
     nearestTeleport = "",
-    nearestLodestone = ""
+    nearestLodestone = "",
+    coordGridX = 0,
+    coordGridZ = 0,
+    coordGridLevel = 0
   },
   {
     id = 34,
@@ -248,7 +317,10 @@ return {
     isRegion = false,
     regionId = 5,
     nearestTeleport = "Dungeoneering Cape (0-9)",
-    nearestLodestone = "Taverley"
+    nearestLodestone = "Taverley",
+    coordGridX = 3386,
+    coordGridZ = 3715,
+    coordGridLevel = 0
   },
   {
     id = 35,
@@ -258,7 +330,10 @@ return {
     isRegion = false,
     regionId = 5,
     nearestTeleport = "Dungeoneering Cape (5)",
-    nearestLodestone = "Taverley"
+    nearestLodestone = "Taverley",
+    coordGridX = 3491,
+    coordGridZ = 3661,
+    coordGridLevel = 0
   },
   --#endregion
   --#region Feldip Hills
@@ -270,7 +345,10 @@ return {
     isRegion = true,
     regionId = -1,
     nearestTeleport = "",
-    nearestLodestone = ""
+    nearestLodestone = "",
+    coordGridX = 0,
+    coordGridZ = 0,
+    coordGridLevel = 0
   },
   {
     id = 34,
@@ -280,7 +358,10 @@ return {
     isRegion = false,
     regionId = 6,
     nearestTeleport = "Fairy Ring (AKS)",
-    nearestLodestone = "Oo'glog"
+    nearestLodestone = "Oo'glog",
+    coordGridX = 2478,
+    coordGridZ = 2923,
+    coordGridLevel = 0
   },
   --#endregion  
   --#region Fremennik Province
@@ -292,7 +373,10 @@ return {
     isRegion = true,
     regionId = -1,
     nearestTeleport = "",
-    nearestLodestone = ""
+    nearestLodestone = "",
+    coordGridX = 0,
+    coordGridZ = 0,
+    coordGridLevel = 0
   },
   {
     id = 35,
@@ -302,7 +386,10 @@ return {
     isRegion = false,
     regionId = 7,
     nearestTeleport = "Fairy Ring (DKS)",
-    nearestLodestone = "Fremennik Province"
+    nearestLodestone = "Fremennik Province",
+    coordGridX = 2727,
+    coordGridZ = 3683,
+    coordGridLevel = 0
   },
   {
     id = 36,
@@ -312,7 +399,10 @@ return {
     isRegion = false,
     regionId = 7,
     nearestTeleport = "Enchanted Lyre (1)",
-    nearestLodestone = "Fremennik Province"
+    nearestLodestone = "Fremennik Province",
+    coordGridX = 2683,
+    coordGridZ = 3699,
+    coordGridLevel = 0
   },
   {
     id = 37,
@@ -322,7 +412,10 @@ return {
     isRegion = false,
     regionId = 7,
     nearestTeleport = "Moonclan Teleport",
-    nearestLodestone = "Lunar Isle"
+    nearestLodestone = "Lunar Isle",
+    coordGridX = 2141,
+    coordGridZ = 3939,
+    coordGridLevel = 0
   },
   {
     id = 38,
@@ -332,7 +425,10 @@ return {
     isRegion = false,
     regionId = 7,
     nearestTeleport = "Enchanted Lyre (4)",
-    nearestLodestone = "Fremennik Province"
+    nearestLodestone = "Fremennik Province",
+    coordGridX = 2393,
+    coordGridZ = 3814,
+    coordGridLevel = 0
   },
   {
     id = 39,
@@ -342,7 +438,10 @@ return {
     isRegion = false,
     regionId = 7,
     nearestTeleport = "Enchanted Lyre (3)",
-    nearestLodestone = "Fremennik Province"
+    nearestLodestone = "Fremennik Province",
+    coordGridX = 2374,
+    coordGridZ = 3832,
+    coordGridLevel = 0
   },
   {
     id = 40,
@@ -352,7 +451,10 @@ return {
     isRegion = false,
     regionId = 7,
     nearestTeleport = "Fairy Ring (CIP)",
-    nearestLodestone = "Fremennik Province"
+    nearestLodestone = "Fremennik Province",
+    coordGridX = 2528,
+    coordGridZ = 3887,
+    coordGridLevel = 0
   },
   --#endregion  
   --#region Kandarin
@@ -364,7 +466,10 @@ return {
     isRegion = true,
     regionId = -1,
     nearestTeleport = "",
-    nearestLodestone = ""
+    nearestLodestone = "",
+    coordGridX = 0,
+    coordGridZ = 0,
+    coordGridLevel = 0
   },
   {
     id = 41,
@@ -374,7 +479,10 @@ return {
     isRegion = false,
     regionId = 8,
     nearestTeleport = "Cape of Legends",
-    nearestLodestone = "Ardougne"
+    nearestLodestone = "Ardougne",
+    coordGridX = 0,
+    coordGridZ = 0,
+    coordGridLevel = 0
   },
   {
     id = 42,
@@ -384,7 +492,10 @@ return {
     isRegion = false,
     regionId = 8,
     nearestTeleport = "Kandarin Monastery Teleport",
-    nearestLodestone = "Ardougne"
+    nearestLodestone = "Ardougne",
+    coordGridX = 0,
+    coordGridZ = 0,
+    coordGridLevel = 0
   },
   {
     id = 43,
@@ -394,7 +505,10 @@ return {
     isRegion = false,
     regionId = 8,
     nearestTeleport = "Luck of the Dwarves (4)",
-    nearestLodestone = "Seers' Village"
+    nearestLodestone = "Seers' Village",
+    coordGridX = 0,
+    coordGridZ = 0,
+    coordGridLevel = 0
   },
   {
     id = 44,
@@ -404,7 +518,10 @@ return {
     isRegion = false,
     regionId = 8,
     nearestTeleport = "Watchtower Teleport",
-    nearestLodestone = "Yanille"
+    nearestLodestone = "Yanille",
+    coordGridX = 0,
+    coordGridZ = 0,
+    coordGridLevel = 0
   },
   {
     id = 45,
@@ -414,7 +531,10 @@ return {
     isRegion = false,
     regionId = 8,
     nearestTeleport = "Khazard Teleport",
-    nearestLodestone = "Yanille"
+    nearestLodestone = "Yanille",
+    coordGridX = 0,
+    coordGridZ = 0,
+    coordGridLevel = 0
   },
   {
     id = 46,
@@ -424,7 +544,10 @@ return {
     isRegion = false,
     regionId = 8,
     nearestTeleport = "Catherby Lodestone",
-    nearestLodestone = "Catherby"
+    nearestLodestone = "Catherby",
+    coordGridX = 0,
+    coordGridZ = 0,
+    coordGridLevel = 0
   },
   --#endregion  
   --#region Kharidian Desert
@@ -436,7 +559,10 @@ return {
     isRegion = true,
     regionId = -1,
     nearestTeleport = "",
-    nearestLodestone = ""
+    nearestLodestone = "",
+    coordGridX = 0,
+    coordGridZ = 0,
+    coordGridLevel = 0
   },
   {
     id = 47,
@@ -446,7 +572,10 @@ return {
     isRegion = false,
     regionId = 9,
     nearestTeleport = "Al Kharid Lodestone",
-    nearestLodestone = "Al Kharid"
+    nearestLodestone = "Al Kharid",
+    coordGridX = 0,
+    coordGridZ = 0,
+    coordGridLevel = 0
   },
   {
     id = 48,
@@ -456,7 +585,10 @@ return {
     isRegion = false,
     regionId = 9,
     nearestTeleport = "Dungeoneering Cape (0-5)",
-    nearestLodestone = "Al Kharid"
+    nearestLodestone = "Al Kharid",
+    coordGridX = 0,
+    coordGridZ = 0,
+    coordGridLevel = 0
   },
   {
     id = 49,
@@ -466,7 +598,10 @@ return {
     isRegion = false,
     regionId = 9,
     nearestTeleport = "Mystical Sand Seed",
-    nearestLodestone = "Al Kharid"
+    nearestLodestone = "Al Kharid",
+    coordGridX = 0,
+    coordGridZ = 0,
+    coordGridLevel = 0
   },
   {
     id = 50,
@@ -476,7 +611,10 @@ return {
     isRegion = false,
     regionId = 9,
     nearestTeleport = "Desert Amulet (2)",
-    nearestLodestone = "Bandit Camp"
+    nearestLodestone = "Bandit Camp",
+    coordGridX = 0,
+    coordGridZ = 0,
+    coordGridLevel = 0
   },
   {
     id = 51,
@@ -486,7 +624,10 @@ return {
     isRegion = false,
     regionId = 9,
     nearestTeleport = "Desert Amulet (1)",
-    nearestLodestone = "Bandit Camp"
+    nearestLodestone = "Bandit Camp",
+    coordGridX = 0,
+    coordGridZ = 0,
+    coordGridLevel = 0
   },
   {
     id = 52,
@@ -496,7 +637,10 @@ return {
     isRegion = false,
     regionId = 9,
     nearestTeleport = "Desert Amulet (1)",
-    nearestLodestone = "Bandit Camp"
+    nearestLodestone = "Bandit Camp",
+    coordGridX = 0,
+    coordGridZ = 0,
+    coordGridLevel = 0
   },
   {
     id = 53,
@@ -506,7 +650,10 @@ return {
     isRegion = false,
     regionId = 9,
     nearestTeleport = "Camulet",
-    nearestLodestone = "Bandit Camp"
+    nearestLodestone = "Bandit Camp",
+    coordGridX = 0,
+    coordGridZ = 0,
+    coordGridLevel = 0
   },
   --#endregion  
   --#region Lost Grove
@@ -518,7 +665,10 @@ return {
     isRegion = true,
     regionId = -1,
     nearestTeleport = "",
-    nearestLodestone = ""
+    nearestLodestone = "",
+    coordGridX = 0,
+    coordGridZ = 0,
+    coordGridLevel = 0
   },
   {
     id = 54,
@@ -528,7 +678,10 @@ return {
     isRegion = false,
     regionId = 10,
     nearestTeleport = "Northern Lost Grove Teleport",
-    nearestLodestone = "Yanille"
+    nearestLodestone = "Yanille",
+    coordGridX = 0,
+    coordGridZ = 0,
+    coordGridLevel = 0
   },
   {
     id = 55,
@@ -538,7 +691,10 @@ return {
     isRegion = false,
     regionId = 10,
     nearestTeleport = "Fairy Ring (BJS)",
-    nearestLodestone = "Yanille"
+    nearestLodestone = "Yanille",
+    coordGridX = 0,
+    coordGridZ = 0,
+    coordGridLevel = 0
   },
   {
     id = 56,
@@ -548,7 +704,10 @@ return {
     isRegion = false,
     regionId = 10,
     nearestTeleport = "Fairy Ring (BJS)",
-    nearestLodestone = "Yanille"
+    nearestLodestone = "Yanille",
+    coordGridX = 0,
+    coordGridZ = 0,
+    coordGridLevel = 0
   },
   --#endregion  
   --#region Menaphos
@@ -560,7 +719,10 @@ return {
     isRegion = true,
     regionId = -1,
     nearestTeleport = "",
-    nearestLodestone = ""
+    nearestLodestone = "",
+    coordGridX = 0,
+    coordGridZ = 0,
+    coordGridLevel = 0
   },
   {
     id = 57,
@@ -570,7 +732,10 @@ return {
     isRegion = false,
     regionId = 11,
     nearestTeleport = "Leela's Favour (4)",
-    nearestLodestone = "Menaphos"
+    nearestLodestone = "Menaphos",
+    coordGridX = 0,
+    coordGridZ = 0,
+    coordGridLevel = 0
   },
   {
     id = 58,
@@ -580,7 +745,10 @@ return {
     isRegion = false,
     regionId = 11,
     nearestTeleport = "Leela's Favour (1)",
-    nearestLodestone = "Menaphos"
+    nearestLodestone = "Menaphos",
+    coordGridX = 0,
+    coordGridZ = 0,
+    coordGridLevel = 0
   },
   --#endregion  
   --#region Misthalin
@@ -592,7 +760,10 @@ return {
     isRegion = true,
     regionId = -1,
     nearestTeleport = "",
-    nearestLodestone = ""
+    nearestLodestone = "",
+    coordGridX = 0,
+    coordGridZ = 0,
+    coordGridLevel = 0
   },
   {
     id = 59,
@@ -602,7 +773,10 @@ return {
     isRegion = false,
     regionId = 12,
     nearestTeleport = "Lumbridge Teleport",
-    nearestLodestone = "Lumbridge"
+    nearestLodestone = "Lumbridge",
+    coordGridX = 0,
+    coordGridZ = 0,
+    coordGridLevel = 0
   },
   {
     id = 60,
@@ -612,7 +786,10 @@ return {
     isRegion = false,
     regionId = 12,
     nearestTeleport = "Archaeology Journal",
-    nearestLodestone = "Varrock"
+    nearestLodestone = "Varrock",
+    coordGridX = 0,
+    coordGridZ = 0,
+    coordGridLevel = 0
   },
   {
     id = 61,
@@ -622,7 +799,10 @@ return {
     isRegion = false,
     regionId = 12,
     nearestTeleport = "Combat Bracelet (2)",
-    nearestLodestone = "Varrock"
+    nearestLodestone = "Varrock",
+    coordGridX = 0,
+    coordGridZ = 0,
+    coordGridLevel = 0
   },
   {
     id = 62,
@@ -632,7 +812,10 @@ return {
     isRegion = false,
     regionId = 12,
     nearestTeleport = "Varrock Teleport",
-    nearestLodestone = "Varrock"
+    nearestLodestone = "Varrock",
+    coordGridX = 0,
+    coordGridZ = 0,
+    coordGridLevel = 0
   },
   --#endregion  
   --#region Morytania
@@ -644,7 +827,10 @@ return {
     isRegion = true,
     regionId = -1,
     nearestTeleport = "",
-    nearestLodestone = ""
+    nearestLodestone = "",
+    coordGridX = 0,
+    coordGridZ = 0,
+    coordGridLevel = 0
   },
   {
     id = 63,
@@ -654,7 +840,10 @@ return {
     isRegion = false,
     regionId = 13,
     nearestTeleport = "Drakan's Medallion (2)",
-    nearestLodestone = "Canifis"
+    nearestLodestone = "Canifis",
+    coordGridX = 0,
+    coordGridZ = 0,
+    coordGridLevel = 0
   },
   {
     id = 64,
@@ -664,7 +853,10 @@ return {
     isRegion = false,
     regionId = 13,
     nearestTeleport = "Kharyll Teleport",
-    nearestLodestone = "Canifis"
+    nearestLodestone = "Canifis",
+    coordGridX = 0,
+    coordGridZ = 0,
+    coordGridLevel = 0
   },
   {
     id = 65,
@@ -674,7 +866,10 @@ return {
     isRegion = false,
     regionId = 13,
     nearestTeleport = "Big Book o' Piracy (1)",
-    nearestLodestone = "Canifis"
+    nearestLodestone = "Canifis",
+    coordGridX = 0,
+    coordGridZ = 0,
+    coordGridLevel = 0
   },
   --#endregion  
   --#region Piscatoris, Gnome Stronghold or Tirannwn
@@ -686,7 +881,10 @@ return {
     isRegion = true,
     regionId = -1,
     nearestTeleport = "",
-    nearestLodestone = ""
+    nearestLodestone = "",
+    coordGridX = 0,
+    coordGridZ = 0,
+    coordGridLevel = 0
   },
   {
     id = 66,
@@ -696,7 +894,10 @@ return {
     isRegion = false,
     regionId = 14,
     nearestTeleport = "Spirit Tree (2)",
-    nearestLodestone = "Eagles' Peak"
+    nearestLodestone = "Eagles' Peak",
+    coordGridX = 0,
+    coordGridZ = 0,
+    coordGridLevel = 0
   },
   {
     id = 67,
@@ -706,7 +907,10 @@ return {
     isRegion = false,
     regionId = 14,
     nearestTeleport = "Crystal Teleport Seed (1)",
-    nearestLodestone = "Tirannwn"
+    nearestLodestone = "Tirannwn",
+    coordGridX = 0,
+    coordGridZ = 0,
+    coordGridLevel = 0
   },
   {
     id = 68,
@@ -716,7 +920,10 @@ return {
     isRegion = false,
     regionId = 14,
     nearestTeleport = "Fairy Ring (AKQ)",
-    nearestLodestone = "Eagles' Peak"
+    nearestLodestone = "Eagles' Peak",
+    coordGridX = 0,
+    coordGridZ = 0,
+    coordGridLevel = 0
   },
   {
     id = 69,
@@ -726,7 +933,10 @@ return {
     isRegion = false,
     regionId = 14,
     nearestTeleport = "Fairy Ring (AKQ)",
-    nearestLodestone = "Eagles' Peak"
+    nearestLodestone = "Eagles' Peak",
+    coordGridX = 0,
+    coordGridZ = 0,
+    coordGridLevel = 0
   },
   {
     id = 70,
@@ -736,7 +946,10 @@ return {
     isRegion = false,
     regionId = 14,
     nearestTeleport = "Elder Divination Outfit (2)",
-    nearestLodestone = "Yanille"
+    nearestLodestone = "Yanille",
+    coordGridX = 0,
+    coordGridZ = 0,
+    coordGridLevel = 0
   },
   --#endregion  
   --#region Wendlewick
@@ -748,7 +961,10 @@ return {
     isRegion = true,
     regionId = -1,
     nearestTeleport = "",
-    nearestLodestone = ""
+    nearestLodestone = "",
+    coordGridX = 0,
+    coordGridZ = 0,
+    coordGridLevel = 0
   },
   {
     id = 71,
@@ -758,7 +974,10 @@ return {
     isRegion = false,
     regionId = 15,
     nearestTeleport = "Fairy Ring (BKS)",
-    nearestLodestone = "Wendlewick"
+    nearestLodestone = "Wendlewick",
+    coordGridX = 0,
+    coordGridZ = 0,
+    coordGridLevel = 0
   },
   {
     id = 72,
@@ -768,7 +987,10 @@ return {
     isRegion = false,
     regionId = 15,
     nearestTeleport = "Wendlewick Teleport",
-    nearestLodestone = "Wendlewick"
+    nearestLodestone = "Wendlewick",
+    coordGridX = 0,
+    coordGridZ = 0,
+    coordGridLevel = 0
   },
   --#endregion
   --#region Wilderness
@@ -781,7 +1003,10 @@ return {
     isRegion = true,
     regionId = -1,
     nearestTeleport = "",
-    nearestLodestone = ""
+    nearestLodestone = "",
+    coordGridX = 0,
+    coordGridZ = 0,
+    coordGridLevel = 0
   },
   {
     id = 73,
@@ -791,7 +1016,10 @@ return {
     isRegion = false,
     regionId = 16,
     nearestTeleport = "Wilderness Sword (1)",
-    nearestLodestone = "Edgeville"
+    nearestLodestone = "Edgeville",
+    coordGridX = 0,
+    coordGridZ = 0,
+    coordGridLevel = 0
   },
   {
     id = 74,
@@ -801,7 +1029,10 @@ return {
     isRegion = false,
     regionId = 16,
     nearestTeleport = "Wilderness Sword (3)",
-    nearestLodestone = "Edgeville"
+    nearestLodestone = "Edgeville",
+    coordGridX = 0,
+    coordGridZ = 0,
+    coordGridLevel = 0
   },
   {
     id = 75,
@@ -811,7 +1042,10 @@ return {
     isRegion = false,
     regionId = 16,
     nearestTeleport = "Wilderness Sword (2)",
-    nearestLodestone = "Wilderness"
+    nearestLodestone = "Wilderness",
+    coordGridX = 0,
+    coordGridZ = 0,
+    coordGridLevel = 0
   },
   {
     id = 76,
@@ -821,7 +1055,10 @@ return {
     isRegion = false,
     regionId = 16,
     nearestTeleport = "Wilderness Sword (2)",
-    nearestLodestone = "Wilderness"
+    nearestLodestone = "Wilderness",
+    coordGridX = 0,
+    coordGridZ = 0,
+    coordGridLevel = 0
   },
   {
     id = 77,
@@ -831,7 +1068,10 @@ return {
     isRegion = false,
     regionId = 16,
     nearestTeleport = "Slayer Cape (1)",
-    nearestLodestone = "Wilderness"
+    nearestLodestone = "Wilderness",
+    coordGridX = 0,
+    coordGridZ = 0,
+    coordGridLevel = 0
   },
   {
     id = 78,
@@ -841,7 +1081,10 @@ return {
     isRegion = false,
     regionId = 16,
     nearestTeleport = "Slayer Cape (1)",
-    nearestLodestone = "Wilderness"
+    nearestLodestone = "Wilderness",
+    coordGridX = 0,
+    coordGridZ = 0,
+    coordGridLevel = 0
   },
   --#endregion
 }
