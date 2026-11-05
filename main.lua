@@ -107,13 +107,13 @@ local function CheckLimit(coordGrid1, coordGrid2)
     end
     return false
 end
-local function ClearShapeListTab1()
+local function ClearShapeTab1()
     if(shapeListTab1 ~= nil) then
         shapeListTab1:Destroy()
         shapeListTab1 = nil
     end
 end
-local function ClearShapeListTab3()
+local function ClearShapeTab3()
     if(shapeListTab3 ~= nil) then
         shapeListTab3:Destroy()
         shapeListTab3 = nil
@@ -161,10 +161,10 @@ local function CreateBox(coordGrid, colorAlpha, colorEdge, shapeToClear)
     instancePos.y = startHeight
 
     if(shapeToClear == "tab1") then
-        ClearShapeListTab1()
+        ClearShapeTab1()
     end
     if(shapeToClear == "tab3") then
-        ClearShapeListTab3()
+        ClearShapeTab3()
     end
 
     -- Create the named shape instance
@@ -260,7 +260,7 @@ local function StarInfoClick(button, active)
         Event.ServerLogic.Subscribe("StarLocatorEvent", function()
             local coordGrid = SetTextTab1()
             if(coordGrid == nil) then
-                ClearShapeListTab1()
+                ClearShapeTab1()
                 return
             else
                 CreateBox(coordGrid, colorGreenA, colorGreen, "tab1")
@@ -269,7 +269,7 @@ local function StarInfoClick(button, active)
     else
         subscribedTab1 = false
         ClearTextTab1()
-        ClearShapeListTab1()
+        ClearShapeTab1()
         button:SetText("Start searching for stars")
         Event.ServerLogic.Unsubscribe("StarLocatorEvent")
     end
@@ -405,6 +405,8 @@ local function CalloutBoxChange(field, reason, text)
             tab3Text2.content = ""
             tab3Text3.content = ""
             tab3Text4.content = ""
+            tab3Text5.content = ""
+            coordGrid = nil
         else
             local calloutRegion = FindLocationById(abbrev.regionId)
             tab3Text1.content = abbrev.name
@@ -432,7 +434,7 @@ end
 local calloutLookup = tab3:AddTextField({ placeholder = "Look up location", onChange = CalloutBoxChange, width = 175})
 
 local function GoToLocation(button, active)
-   ClearShapeListTab3()
+   ClearShapeTab3()
     if(not subscribedTab3) then
         if(coordGrid == nil) then
             return
@@ -441,7 +443,7 @@ local function GoToLocation(button, active)
         button:SetText("Stop travel")
         Event.ServerLogic.Subscribe("LocationLocatorEvent", function()
             if(coordGrid == nil) then
-                ClearShapeListTab3()
+                ClearShapeTab3()
                 return
             else
                 local playerCoordGrid = Player.GetEntity().coordGrid
@@ -452,7 +454,7 @@ local function GoToLocation(button, active)
     else
         subscribedTab3 = false
         button:SetText("Go to")
-        ClearShapeListTab3()
+        ClearShapeTab3()
         tab3Text5.content = ""
         Event.ServerLogic.Unsubscribe("LocationLocatorEvent")
     end
