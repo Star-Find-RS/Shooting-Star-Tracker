@@ -107,7 +107,6 @@ function L.Setup(tab3)
             end
         end
     end
-    local calloutLookup = tab3:AddTextField({ placeholder = "Look up location", onChange = CalloutBoxChange, width = 175})
 
     local function GoToLocation(button, active)
         Functions.ClearShape(shapeListTab3)
@@ -138,6 +137,8 @@ function L.Setup(tab3)
     end
 
     --#region Controls
+    local calloutLookup = tab3:AddTextField({ placeholder = "Look up location", onChange = CalloutBoxChange, width = 175})
+
     tab3:AddFancyButton("Go to", GoToLocation, {inline = true, width = 75})
 
     --Name of location
