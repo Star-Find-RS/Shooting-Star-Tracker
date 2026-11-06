@@ -40,6 +40,7 @@ local tab1 = tabList:GetPage(1)
 local tab2 = tabList:GetPage(2)
 local tab3 = tabList:GetPage(3)
 
+
 --Tab 1
 local tab1Text1, tab1Text2, tab1Text3, tab1Text4, tab1Text5
 --Tab 2
@@ -331,7 +332,6 @@ tab2:AddSimpleButton("Clear", ClearScopeInfoClick, {inline = true})
 --#endregion
 
 --#region Look up Information
-
 local coordGrid = nil
 
 local function  CleanTab3()

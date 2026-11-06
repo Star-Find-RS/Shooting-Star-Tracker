@@ -141,7 +141,7 @@ return {
     map = nil,
     isRegion = false,
     regionId = 2,
-    nearestTeleport = "Teleport to House",
+    nearestTeleport = "House Teleport",
     nearestLodestone = "Port Sarim",
     coordGridX = 2974,
     coordGridZ = 3240,
@@ -1009,7 +1009,7 @@ return {
   },
   {
     id = 73,
-    abbreviation = {"zm", "edgeville", "level 6", "level 7", "rune rocks", "runite rocks"},
+    abbreviation = {"zm", "zammy mage", "zam mage", "mage of zamorak", "edgeville", "level 6", "lvl 6", "level 7", "lvl 7", "rune rocks", "runite rocks"},
     name = "Wilderness South Mine",
     map = nil,
     isRegion = false,
@@ -1022,7 +1022,7 @@ return {
   },
   {
     id = 74,
-    abbreviation = {"sm", "skeleton mine", "level 9", "level 10", "bkf", "dwf", "black knight", "dark warrior", "orichalcite rocks"},
+    abbreviation = {"sm", "skeleton mine", "level 9", "lvl 9", "level 10", "lvl 10", "bkf", "dwf", "black knight", "dark warrior", "orichalcite rocks"},
     name = "Wilderness South-west Mine",
     map = nil,
     isRegion = false,
@@ -1035,7 +1035,7 @@ return {
   },
   {
     id = 75,
-    abbreviation = {"hobs", "hobgoblin", "dark beasts", "level 35", "necrite rocks"},
+    abbreviation = {"hobs", "hobgoblin", "dark beasts", "level 35", "lvl 35", "necrite rocks"},
     name = "Wilderness Hobgoblin Mine",
     map = nil,
     isRegion = false,
@@ -1048,7 +1048,7 @@ return {
   },
   {
     id = 76,
-    abbreviation = {"lm", "im", "lava", "hydrix dragon", "level 47", "phasmatite rocks", "death", "danger"},
+    abbreviation = {"lm", "im", "lava", "hydrix dragon", "level 47", "lvl 47", "phasmatite rocks", "death", "danger"},
     name = "Wilderness Lava Maze Mine",
     map = nil,
     isRegion = false,
@@ -1061,7 +1061,7 @@ return {
   },
   {
     id = 77,
-    abbreviation = {"pm", "pirate", "mandrith", "level 53", "level 54", "banite rocks"},
+    abbreviation = {"pm", "pirate", "mandrith", "level 53", "lvl 53", "level 54", "lvl 54", "banite rocks"},
     name = "Wilderness Pirates' Hideout Mine",
     map = nil,
     isRegion = false,
@@ -1074,7 +1074,7 @@ return {
   },
   {
     id = 78,
-    abbreviation = {"mb", "mage arena bank", "ma", "east of mandrith", "deserted keep", "lever", "level 56"},
+    abbreviation = {"mb", "mage arena bank", "ma", "east of mandrith", "deserted keep", "lever", "level 56", "lvl 56"},
     name = "Mage Arena",
     map = nil,
     isRegion = false,
