@@ -1,5 +1,6 @@
---#region Functions
-local function CheckDirection(coordFirst, coordSecond)
+local F = {}
+
+F.CheckDirection = function(coordFirst, coordSecond)
     if(coordFirst.x < coordSecond.x) then
         if(coordFirst.z < coordSecond.z) then
             return "southwest"
@@ -28,7 +29,7 @@ end
 
 --Range is limited per Mod Jewel
 local range = 32
-local function CheckLimit(coordGrid1, coordGrid2)
+F.CheckLimit = function(coordGrid1, coordGrid2)
     if(coordGrid1 == nil or coordGrid2 == nil) then
         return true
     end
@@ -40,14 +41,14 @@ local function CheckLimit(coordGrid1, coordGrid2)
     end
     return false
 end
-local function ClearShapeTab1()
-    if(shapeListTab1 ~= nil) then
-        shapeListTab1:Destroy()
-        shapeListTab1 = nil
+F.ClearShape = function(shape)
+    if(shape ~= nil) then
+        shape:Destroy()
+        shape = nil
     end
 end
 
-local function CreateBox(coordGrid, colorAlpha, colorEdge, shapeToClear)
+F.CreateBox = function(coordGrid, colorAlpha, colorEdge, oldShape, newShape)
     -- A basic tile shape
     local tileShape = ShapeData.new()
     -- 2x2 box
@@ -88,24 +89,16 @@ local function CreateBox(coordGrid, colorAlpha, colorEdge, shapeToClear)
     -- Set the instance height
     instancePos.y = startHeight
 
-    if(shapeToClear == "tab1") then
-        ClearShapeTab1()
-    end
-    if(shapeToClear == "tab3") then
-        ClearShapeTab3()
-    end
+    F.ClearShape(oldShape)
 
     -- Create the named shape instance
-    local instance = ShapeList.CreateInstance("myInstance"..shapeToClear)
+    local instance = ShapeList.CreateInstance("myInstance"..newShape)
     instance:SetShapeData(tileShape)
     instance.translation = instancePos
     instance.ignoreDepth = true
 
     -- Add to shape list so we can keep track and remove when no longer required
-    if(shapeToClear == "tab1") then
-        shapeListTab1 = instance
-    elseif(shapeToClear == "tab3") then
-        shapeListTab3 = instance
-    end
+    return instance
 end
---#endregion
+
+return F
