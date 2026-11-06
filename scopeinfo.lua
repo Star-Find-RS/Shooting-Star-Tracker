@@ -1,11 +1,7 @@
 local S = {}
 S.Setup = function(tab2)
     local tab2Text1, tab2Text2, tab2Text3, tab2Text4
-    local tab2Text = tab2:AddText({
-        text = "",
-        height = 125,
-        y = 50,
-    })
+    local tab2Text
     local function ScopeInfoClick(button, active)
         tab2Text.content = ""
         local inter = ui.Interfaces:GetInterface(id.Interface.MESBOX_V2)
@@ -40,6 +36,11 @@ S.Setup = function(tab2)
     --#region Controls
     tab2:AddFancyButton("Push for scope reading", ScopeInfoClick, { variant = "positive" })
     tab2:AddSimpleButton("Clear", ClearScopeInfoClick, {inline = true})
+    tab2Text = tab2:AddText({
+        text = "",
+        height = 125,
+        y = 50,
+    })
     --#endregion
 end
 return S
