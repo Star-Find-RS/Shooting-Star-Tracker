@@ -5,7 +5,7 @@ S.subscribed = false
 
 S.Setup = function(tab1)
     --Tab 1
-    local tab1Text1, tab1Text2, tab1Text3, tab1Text4, tab1Text5
+    local tab1Text1, tab1Text2, tab1Text3, tab1Text4, tab1Text5, tab1Text6
     
     local shapeListTab1
     local colorGreenA = 0x00FF0027
@@ -16,6 +16,7 @@ S.Setup = function(tab1)
         tab1Text3.content = ""
         tab1Text4.content = ""
         tab1Text5.content = ""
+        tab1Text6.content = ""
     end
     local function LookUpId(configValue)
         for _, star in ipairs(Stars) do
@@ -70,11 +71,12 @@ S.Setup = function(tab1)
             tab1Text2.content = "No star found nearby"
         else
             tab1Text3.content = "You are "..Functions.CheckDirection(Player.GetEntity().coordGrid, coordGrid).." of the star"
+            tab1Text4.content = "Location: " .. Functions.CheckLocation(coordGrid)
         end
-        tab1Text4.content = "Next star in: "..var.VarPlayer.DNDTRACKER_SHOOTING_STAR_TIME.value.." minutes"
+        tab1Text5.content = "Next star in: "..var.VarPlayer.DNDTRACKER_SHOOTING_STAR_TIME.value.." minutes"
         if(var.VarPlayer.DNDTRACKER_SHOOTING_STAR_TIME.value < 25) then
-            tab1Text4.content = tab1Text4.content.."*"
-            tab1Text5.content = "*Note: The star may be part of the new wave,<br> tracker may be displaying time until end of wave"
+            tab1Text5.content = tab1Text5.content.."*"
+            tab1Text6.content = "*Note: The star may be part of the new wave,<br> tracker may be displaying time until end of wave"
         end
 
         return coordGrid
@@ -110,10 +112,12 @@ S.Setup = function(tab1)
     tab1Text2 = tab1:AddText({ text = "" })
     --Star direction
     tab1Text3 = tab1:AddText({ text = "" })
-    --Time to next star
+    --Name of Location if Exists
     tab1Text4 = tab1:AddText({ text = "" })
+    --Time to next star
+    tab1Text5 = tab1:AddText({ text = "" })
     --Warning message for next star time
-    tab1Text5 = tab1:AddText({
+    tab1Text6 = tab1:AddText({
         text = "",
         font = id.Font.MUSEO_SANS_15PT_BOLD,
         marginTop = 5

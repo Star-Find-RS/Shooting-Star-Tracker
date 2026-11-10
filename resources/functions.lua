@@ -1,3 +1,4 @@
+local Locations = require("resources/locations")
 local F = {}
 
 F.CheckDirection = function(coordFirst, coordSecond)
@@ -99,6 +100,21 @@ F.CreateBox = function(coordGrid, colorAlpha, colorEdge, oldShape, newShape)
 
     -- Add to shape list so we can keep track and remove when no longer required
     return instance
+end
+
+--Check nearby location name
+F.CheckLocation = function(coordGrid)
+    for _, loc in ipairs(Locations) do
+        if loc.coordGridX > coordGrid.x - 5 
+        and loc.coordGridX < coordGrid.x + 5 
+        and loc.coordGridZ > coordGrid.z - 5 
+        and loc.coordGridZ < coordGrid.z + 5
+        then
+            return loc.name
+        end
+    end
+    return "Location name unknown"
+
 end
 
 return F
