@@ -1,83 +1,83 @@
 local L = {}
 L.otherSizes = 
 {
-    "average", 
-    "very big", 
-    "fairly big", 
-    "big", 
-    "very small", 
-    "fairly small", 
-    "small"
+    "Average", 
+    "Very big", 
+    "Fairly big", 
+    "Big", 
+    "Very small", 
+    "Fairly small", 
+    "Small"
 }
 L.regions = 
 {
     {
         name = "amber",
-        regionId = 0
+        regionCall = "Amberfell"
     },
     {
         name = "anach",
-        regionId = 1
+        regionCall = "Anachronia"
     },
     {
         name = "asgar",
-        regionId = 2
+        regionCall = "Asgarnia"
     },
     {
         name = "ashd",
-        regionId = 3
+        regionCall = "Ashdale"
     },
     {
         name = "cran",
-        regionId = 4
+        regionCall = "Crandor/Karamja"
     },
     {
         name = "daemo",
-        regionId = 5
+        regionCall = "Daemonheim"
     },
     {
         name = "feldip",
-        regionId = 6
+        regionCall = "Feldip Hills"
     },
     {
         name = "freme",
-        regionId = 7
+        regionCall = "Fremennik/Lunar Isle"
     },
     {
         name = "kand",
-        regionId = 8
+        regionCall = "Kandarin"
     },
     {
         name = "dese",
-        regionId = 9
+        regionCall = "Kharidian Desert"
     },
     {
         name = "grove",
-        regionId = 10
+        regionCall = "Lost Grove"
     },
     {
         name = "mena",
-        regionId = 11
+        regionCall = "Menaphos"
     },
     {
         name = "misth",
-        regionId = 12
+        regionCall = "Misthalin"
     },
     {
         name = "mory",
-        regionId = 13
+        regionCall = "Morytania/Mos Le'Harmless"
     },
     {
         name = "pisca",
-        regionId = 14
+        regionCall = "Piscatoris/Gnome/Tirannwn"
     },
     {
         name = "wendle",
-        regionId = 15
+        regionCall = "Wendlewick"
     },
     {
         name = "wilder",
-        regionId = 16
+        regionCall = "Wilderness"
     }
 }
 return L

@@ -3,13 +3,14 @@ local Locations = require("resources/Locations")
 local Scope = require("resources/scope")
 local S = {}
 S.Setup = function(tab2)
-    local tab2Text1, tab2Text2, tab2Text3, tab2Text4
+    local tab2Text1, tab2Text2, tab2Text3, tab2Text4, tab2TextBox1
     --local tab2Text
     local function ClearTextTab2()
         tab2Text1.content = ""
         tab2Text2.content = ""
         tab2Text3.content = ""
         tab2Text4.content = ""
+        tab2TextBox1:SetText("")
     end
     local function ScopeInfoClick(button, active)
         ClearTextTab2()
@@ -43,13 +44,8 @@ S.Setup = function(tab2)
                         --Get region reading
                         local textRegion = string.sub(scopeText, indexFirst + 1, indexFirst + 1 + indexSecond - 1)
                         for index, value in ipairs(Scope.regions) do
-                            if(string.find(string.lower(textRegion), value.name)) then
-                                for index, location in ipairs(Locations) do
-                                    if(location.id == value.regionId) then
-                                        textRegion = location.name
-                                        break
-                                    end
-                                end
+                            if(string.find(string.lower(textRegion), string.lower(value.name))) then
+                                textRegion = value.regionCall
                                 break
                             end
                         end
@@ -59,7 +55,7 @@ S.Setup = function(tab2)
                         local textSize = string.sub(string.sub(scopeText, indexFirst + 1 + indexSecond), 1, indexSecond - 1)
                         local actualSize = ""
                         for index, value in ipairs(Scope.otherSizes) do
-                            if(string.find(textSize, value)) then
+                            if(string.find(string.lower(textSize), string.lower(value))) then
                                 actualSize = value
                                 break
                             end
@@ -70,6 +66,9 @@ S.Setup = function(tab2)
                             actualSize = string.gsub(actualSize, "%.", "")
                         end
                         tab2Text4.content = "Size: " .. actualSize
+
+                        --/call world:205 region:Crandor/Karamja size:4 relative-time:58
+                        tab2TextBox1:SetText("/call world:"..world.." region:"..textRegion.." size:"..actualSize.." relative-time:"..info.value)
                     end
                 end
             end
@@ -93,6 +92,7 @@ S.Setup = function(tab2)
     tab2Text4 = tab2:AddText({
         text = ""
     })
+    tab2TextBox1 = tab2:AddTextField({ placeholder = "Scope info" })
     --#endregion
 end
 return S
