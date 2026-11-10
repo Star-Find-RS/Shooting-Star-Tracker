@@ -1,5 +1,5 @@
-local Stars = require("star sizes")
-local Functions = require("functions")
+local Stars = require("resources/star sizes")
+local Functions = require("resources/functions")
 local S = {}
 S.subscribed = false
 

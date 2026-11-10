@@ -1,5 +1,5 @@
-local Locations = require("locations")
-local Functions = require("functions")
+local Locations = require("resources/locations")
+local Functions = require("resources/functions")
 local L = {}
 L.subscribed = false
 

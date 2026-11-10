@@ -1,7 +1,7 @@
-local Locations = require("locations")
-local Lookup = require("lookupinfo")
-local Starinfo = require("starinfo")
-local Scopeinfo = require("scopeinfo")
+local Locations = require("resources/locations")
+local Lookup = require("resources/ui/lookupinfo")
+local Starinfo = require("resources/ui/starinfo")
+local Scopeinfo = require("resources/ui/scopeinfo")
 
 --#region Don't ask, only way for me to get all the files loaded
 local game_window = ui.Interfaces:GetComponent(id.Component.TOPLEVEL_V2__PLUGIN_BUILD_LAYER_TOP)
