@@ -413,8 +413,8 @@ return {
     regionId = 7,
     nearestTeleport = "Moonclan Teleport",
     nearestLodestone = "Lunar Isle",
-    coordGridX = 2141,
-    coordGridZ = 3939,
+    coordGridX = 2139,
+    coordGridZ = 3938,
     coordGridLevel = 0
   },
   {
